@@ -1,0 +1,4 @@
+/* Display name and description for this extension. */
+"CFBundleDisplayName" = "mStat";
+"com.apple.notificationcenter.widget.description" = "mStat is a system monitor widget that can be accessed easily in Notification Center.";
+

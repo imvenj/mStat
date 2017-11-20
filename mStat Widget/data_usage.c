@@ -1,6 +1,6 @@
 //
 //  data_usage.c
-//  Monit
+//  mStat Widget
 //
 //  Created by venj on 2017/11/17.
 //  Copyright © 2017年 venj. All rights reserved.

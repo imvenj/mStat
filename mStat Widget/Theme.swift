@@ -1,6 +1,6 @@
 //
 //  Theme.swift
-//  Monit
+//  mStat Widget
 //
 //  Created by venj on 2017/11/20.
 //  Copyright © 2017年 venj. All rights reserved.

@@ -1,0 +1,4 @@
+/* Display name and description for this extension. */
+"CFBundleDisplayName" = "mStat";
+"com.apple.notificationcenter.widget.description" = "mStat 是一个系统监控小工具，用户可以通过打开通知中心，快速查看系统状态。";
+

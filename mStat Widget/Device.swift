@@ -1,6 +1,6 @@
 //
 //  Device.swift
-//  Monit
+//  mStat Widget
 //
 //  Created by venj on 2017/11/17.
 //  Copyright © 2017年 venj. All rights reserved.
@@ -22,7 +22,7 @@ class Device {
      - returns: Returns a tuple. First member is gateway's network interface name for IPv4, second member is gateway's IPv4 address; Third member is gateway's network interface name for IPv6, fourth member is gateway's IPv6 address.
      */
     func defaultRoute() -> DefaultRouteType {
-        let ds = SCDynamicStoreCreate(kCFAllocatorDefault, "me.venj.mStat.Monit" as CFString, nil, nil)
+        let ds = SCDynamicStoreCreate(kCFAllocatorDefault, "me.venj.mStat.mStat-Widget" as CFString, nil, nil)
         let key = ("State:/Network/Global/IPv4")  as CFString
         let dr = SCDynamicStoreCopyValue(ds, key) as? [String: String]
         let key6 = ("State:/Network/Global/IPv6")  as CFString

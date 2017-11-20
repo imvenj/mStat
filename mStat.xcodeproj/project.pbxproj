@@ -15,7 +15,7 @@
 		2549EE8E1FBEB51100BBAA84 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2549EE8D1FBEB51100BBAA84 /* TodayViewController.swift */; };
 		2549EE911FBEB51100BBAA84 /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2549EE8F1FBEB51100BBAA84 /* TodayViewController.xib */; };
 		2549EE951FBEB51100BBAA84 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2549EE931FBEB51100BBAA84 /* InfoPlist.strings */; };
-		2549EE991FBEB51100BBAA84 /* Monit.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2549EE881FBEB51100BBAA84 /* Monit.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2549EE991FBEB51100BBAA84 /* mStat Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2549EE881FBEB51100BBAA84 /* mStat Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		25842AD61FC2712800579713 /* Battery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25842AD21FC2712700579713 /* Battery.swift */; };
 		25842AD71FC2712800579713 /* IOReturn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25842AD31FC2712700579713 /* IOReturn.swift */; };
 		25842AD81FC2712800579713 /* Process.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25842AD41FC2712700579713 /* Process.swift */; };
@@ -48,7 +48,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				2549EE991FBEB51100BBAA84 /* Monit.appex in Embed App Extensions */,
+				2549EE991FBEB51100BBAA84 /* mStat Widget.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -73,18 +73,18 @@
 		2549EE7B1FBEB48F00BBAA84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2549EE7D1FBEB48F00BBAA84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2549EE7E1FBEB48F00BBAA84 /* mStat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = mStat.entitlements; sourceTree = "<group>"; };
-		2549EE881FBEB51100BBAA84 /* Monit.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Monit.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2549EE881FBEB51100BBAA84 /* mStat Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "mStat Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2549EE8A1FBEB51100BBAA84 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		2549EE8D1FBEB51100BBAA84 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		2549EE901FBEB51100BBAA84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TodayViewController.xib; sourceTree = "<group>"; };
 		2549EE921FBEB51100BBAA84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2549EE941FBEB51100BBAA84 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2549EE961FBEB51100BBAA84 /* Monit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Monit.entitlements; sourceTree = "<group>"; };
+		2549EE961FBEB51100BBAA84 /* mStat Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "mStat Widget.entitlements"; sourceTree = "<group>"; };
 		25842AD21FC2712700579713 /* Battery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Battery.swift; sourceTree = "<group>"; };
 		25842AD31FC2712700579713 /* IOReturn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IOReturn.swift; sourceTree = "<group>"; };
 		25842AD41FC2712700579713 /* Process.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Process.swift; sourceTree = "<group>"; };
 		25842AD51FC2712700579713 /* System.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
-		25842ADB1FC2719700579713 /* Monit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Monit-Bridging-Header.h"; sourceTree = "<group>"; };
+		25842ADB1FC2719700579713 /* mStat-Widget-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mStat-Widget-Bridging-Header.h"; sourceTree = "<group>"; };
 		25842ADC1FC2719800579713 /* data_usage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = data_usage.h; sourceTree = "<group>"; };
 		25842ADD1FC2719800579713 /* data_usage.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = data_usage.c; sourceTree = "<group>"; };
 		25842ADF1FC2722D00579713 /* ProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
@@ -123,7 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				2549EE731FBEB48F00BBAA84 /* mStat */,
-				2549EE8C1FBEB51100BBAA84 /* Monit */,
+				2549EE8C1FBEB51100BBAA84 /* mStat Widget */,
 				2549EE891FBEB51100BBAA84 /* Frameworks */,
 				2549EE721FBEB48F00BBAA84 /* Products */,
 			);
@@ -133,7 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				2549EE711FBEB48F00BBAA84 /* mStat.app */,
-				2549EE881FBEB51100BBAA84 /* Monit.appex */,
+				2549EE881FBEB51100BBAA84 /* mStat Widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -160,7 +160,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2549EE8C1FBEB51100BBAA84 /* Monit */ = {
+		2549EE8C1FBEB51100BBAA84 /* mStat Widget */ = {
 			isa = PBXGroup;
 			children = (
 				25842ADA1FC2713900579713 /* SystemKit */,
@@ -175,10 +175,10 @@
 				2549EE8F1FBEB51100BBAA84 /* TodayViewController.xib */,
 				2549EE921FBEB51100BBAA84 /* Info.plist */,
 				2549EE931FBEB51100BBAA84 /* InfoPlist.strings */,
-				2549EE961FBEB51100BBAA84 /* Monit.entitlements */,
-				25842ADB1FC2719700579713 /* Monit-Bridging-Header.h */,
+				2549EE961FBEB51100BBAA84 /* mStat Widget.entitlements */,
+				25842ADB1FC2719700579713 /* mStat-Widget-Bridging-Header.h */,
 			);
-			path = Monit;
+			path = "mStat Widget";
 			sourceTree = "<group>";
 		};
 		25842ADA1FC2713900579713 /* SystemKit */ = {
@@ -215,9 +215,9 @@
 			productReference = 2549EE711FBEB48F00BBAA84 /* mStat.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2549EE871FBEB51100BBAA84 /* Monit */ = {
+		2549EE871FBEB51100BBAA84 /* mStat Widget */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2549EE9A1FBEB51100BBAA84 /* Build configuration list for PBXNativeTarget "Monit" */;
+			buildConfigurationList = 2549EE9A1FBEB51100BBAA84 /* Build configuration list for PBXNativeTarget "mStat Widget" */;
 			buildPhases = (
 				2549EE841FBEB51100BBAA84 /* Sources */,
 				2549EE851FBEB51100BBAA84 /* Frameworks */,
@@ -227,9 +227,9 @@
 			);
 			dependencies = (
 			);
-			name = Monit;
+			name = "mStat Widget";
 			productName = Monit;
-			productReference = 2549EE881FBEB51100BBAA84 /* Monit.appex */;
+			productReference = 2549EE881FBEB51100BBAA84 /* mStat Widget.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -268,7 +268,7 @@
 			projectRoot = "";
 			targets = (
 				2549EE701FBEB48F00BBAA84 /* mStat */,
-				2549EE871FBEB51100BBAA84 /* Monit */,
+				2549EE871FBEB51100BBAA84 /* mStat Widget */,
 			);
 		};
 /* End PBXProject section */
@@ -328,7 +328,7 @@
 /* Begin PBXTargetDependency section */
 		2549EE981FBEB51100BBAA84 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2549EE871FBEB51100BBAA84 /* Monit */;
+			target = 2549EE871FBEB51100BBAA84 /* mStat Widget */;
 			targetProxy = 2549EE971FBEB51100BBAA84 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -520,16 +520,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = Monit/Monit.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "mStat Widget/mStat Widget.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 32Y52676KN;
-				INFOPLIST_FILE = Monit/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/mStat Widget/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.venj.mStat.Monit;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.venj.mStat.mStat-Widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "Monit/Monit-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "mStat Widget/mStat-Widget-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
@@ -539,16 +541,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = Monit/Monit.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "mStat Widget/mStat Widget.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 32Y52676KN;
-				INFOPLIST_FILE = Monit/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/mStat Widget/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.venj.mStat.Monit;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.venj.mStat.mStat-Widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "Monit/Monit-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "mStat Widget/mStat-Widget-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -574,7 +578,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2549EE9A1FBEB51100BBAA84 /* Build configuration list for PBXNativeTarget "Monit" */ = {
+		2549EE9A1FBEB51100BBAA84 /* Build configuration list for PBXNativeTarget "mStat Widget" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2549EE9B1FBEB51100BBAA84 /* Debug */,

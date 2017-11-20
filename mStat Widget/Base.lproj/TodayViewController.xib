@@ -7,7 +7,7 @@
         <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
     </dependencies>
     <objects>
-        <customObject id="-2" userLabel="File's Owner" customClass="TodayViewController" customModule="Monit" customModuleProvider="target">
+        <customObject id="-2" userLabel="File's Owner" customClass="TodayViewController" customModule="mStat_Widget" customModuleProvider="target">
             <connections>
                 <outlet property="batteryInfoLabel" destination="aT4-9w-v5M" id="1wy-la-2KF"/>
                 <outlet property="batteryPercentLabel" destination="k76-cu-SUq" id="S4i-RL-wLT"/>
@@ -51,7 +51,7 @@
                     <rect key="frame" x="48" y="150" width="17" height="17"/>
                     <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="network_icon" id="w73-jd-YeL"/>
                 </imageView>
-                <customView translatesAutoresizingMaskIntoConstraints="NO" id="Db6-pL-RdV" customClass="ProgressBar" customModule="Monit" customModuleProvider="target">
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="Db6-pL-RdV" customClass="ProgressBar" customModule="mStat_Widget" customModuleProvider="target">
                     <rect key="frame" x="74" y="225" width="216" height="17"/>
                 </customView>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tgc-Oz-1OH">
@@ -69,7 +69,7 @@
                     </constraints>
                     <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="memory_icon" id="gmR-g8-rPe"/>
                 </imageView>
-                <customView translatesAutoresizingMaskIntoConstraints="NO" id="ZJZ-Um-HCi" customClass="ProgressBar" customModule="Monit" customModuleProvider="target">
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="ZJZ-Um-HCi" customClass="ProgressBar" customModule="mStat_Widget" customModuleProvider="target">
                     <rect key="frame" x="74" y="200" width="216" height="17"/>
                 </customView>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Hk4-Gh-tVw">
@@ -87,10 +87,10 @@
                     </constraints>
                     <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="hdd_icon" id="H6A-q9-cSo"/>
                 </imageView>
-                <customView translatesAutoresizingMaskIntoConstraints="NO" id="bek-rC-UCa" customClass="ProgressBar" customModule="Monit" customModuleProvider="target">
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="bek-rC-UCa" customClass="ProgressBar" customModule="mStat_Widget" customModuleProvider="target">
                     <rect key="frame" x="74" y="175" width="216" height="17"/>
                 </customView>
-                <customView translatesAutoresizingMaskIntoConstraints="NO" id="6eb-4x-8Yh" customClass="ProgressBar" customModule="Monit" customModuleProvider="target">
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="6eb-4x-8Yh" customClass="ProgressBar" customModule="mStat_Widget" customModuleProvider="target">
                     <rect key="frame" x="111" y="25" width="120" height="17"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="120" id="46T-Zd-teK"/>
@@ -191,7 +191,7 @@
                     <rect key="frame" x="147" y="50" width="48" height="17"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Battery" id="Zo1-2H-cTo">
                         <font key="font" metaFont="system"/>
-                        <color key="textColor" name="disabledControlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="textColor" name="controlShadowColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
