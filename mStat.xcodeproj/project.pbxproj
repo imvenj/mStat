@@ -96,6 +96,8 @@
 		2592022E1FC2D6FA00F93FD5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		259202321FC2D80800F93FD5 /* en */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		259202341FC2D80A00F93FD5 /* zh-Hans */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		2592023A1FC2FA4E00F93FD5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		2592023C1FC2FA4F00F93FD5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -338,6 +340,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				2549EE7B1FBEB48F00BBAA84 /* Base */,
+				2592023A1FC2FA4E00F93FD5 /* en */,
+				2592023C1FC2FA4F00F93FD5 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

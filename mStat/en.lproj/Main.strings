@@ -1,0 +1,84 @@
+
+/* Class = "NSMenuItem"; title = "mStat"; ObjectID = "1Xt-HY-uBw"; */
+"1Xt-HY-uBw.title" = "mStat";
+
+/* Class = "NSTextFieldCell"; title = "3. Click the green + button"; ObjectID = "3f5-Fd-HSd"; */
+"3f5-Fd-HSd.title" = "3. Click the green + button";
+
+/* Class = "NSTextFieldCell"; title = "User's Guide"; ObjectID = "4ca-YP-zQV"; */
+"4ca-YP-zQV.title" = "User's Guide";
+
+/* Class = "NSMenuItem"; title = "Quit mStat"; ObjectID = "4sb-4s-VLi"; */
+"4sb-4s-VLi.title" = "Quit mStat";
+
+/* Class = "NSMenuItem"; title = "About mStat"; ObjectID = "5kV-Vb-QxS"; */
+"5kV-Vb-QxS.title" = "About mStat";
+
+/* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
+"AYu-sK-qS6.title" = "Main Menu";
+
+/* Class = "NSMenuItem"; title = "Preferences…"; ObjectID = "BOF-NM-1cW"; */
+"BOF-NM-1cW.title" = "Preferences…";
+
+/* Class = "NSMenu"; title = "Help"; ObjectID = "F2S-fz-NVQ"; */
+"F2S-fz-NVQ.title" = "Help";
+
+/* Class = "NSMenuItem"; title = "mStat Help"; ObjectID = "FKE-Sm-Kum"; */
+"FKE-Sm-Kum.title" = "mStat Help";
+
+/* Class = "NSTextFieldCell"; title = "1. Open Notification Center and Click Today"; ObjectID = "G8I-Em-2rw"; */
+"G8I-Em-2rw.title" = "1. Open Notification Center and Click Today";
+
+/* Class = "NSWindow"; title = "mStat"; ObjectID = "IQv-IB-iLA"; */
+"IQv-IB-iLA.title" = "mStat";
+
+/* Class = "NSMenuItem"; title = "Show All"; ObjectID = "Kd2-mp-pUS"; */
+"Kd2-mp-pUS.title" = "Show All";
+
+/* Class = "NSMenuItem"; title = "Bring All to Front"; ObjectID = "LE2-aR-0XJ"; */
+"LE2-aR-0XJ.title" = "Bring All to Front";
+
+/* Class = "NSMenuItem"; title = "Services"; ObjectID = "NMo-om-nkz"; */
+"NMo-om-nkz.title" = "Services";
+
+/* Class = "NSMenuItem"; title = "Minimize"; ObjectID = "OY7-WF-poV"; */
+"OY7-WF-poV.title" = "Minimize";
+
+/* Class = "NSMenuItem"; title = "Hide mStat"; ObjectID = "Olw-nP-bQN"; */
+"Olw-nP-bQN.title" = "Hide mStat";
+
+/* Class = "NSMenuItem"; title = "Zoom"; ObjectID = "R4o-n2-Eq4"; */
+"R4o-n2-Eq4.title" = "Zoom";
+
+/* Class = "NSMenu"; title = "Window"; ObjectID = "Td7-aD-5lo"; */
+"Td7-aD-5lo.title" = "Window";
+
+/* Class = "NSTextFieldCell"; title = "1 New"; ObjectID = "Ulp-5M-YyL"; */
+"Ulp-5M-YyL.title" = "1 New";
+
+/* Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "Vdr-fp-XzO"; */
+"Vdr-fp-XzO.title" = "Hide Others";
+
+/* Class = "NSTextFieldCell"; title = "Today"; ObjectID = "YgL-Ij-4Fd"; */
+"YgL-Ij-4Fd.title" = "Today";
+
+/* Class = "NSMenuItem"; title = "Window"; ObjectID = "aUF-d1-5bR"; */
+"aUF-d1-5bR.title" = "Window";
+
+/* Class = "NSMenu"; title = "Services"; ObjectID = "hz9-B4-Xy5"; */
+"hz9-B4-Xy5.title" = "Services";
+
+/* Class = "NSTextFieldCell"; title = "How To Enable mStat Widget"; ObjectID = "roz-3d-wKp"; */
+"roz-3d-wKp.title" = "How To Enable mStat Widget";
+
+/* Class = "NSTextFieldCell"; title = "2. Click \"1 New\" or \"Edit\" button"; ObjectID = "sfn-kO-CFl"; */
+"sfn-kO-CFl.title" = "2. Click \"1 New\" or \"Edit\" button";
+
+/* Class = "NSMenu"; title = "mStat"; ObjectID = "uQy-DD-JDr"; */
+"uQy-DD-JDr.title" = "mStat";
+
+/* Class = "NSTextFieldCell"; title = "Notifications"; ObjectID = "vNh-VW-MSX"; */
+"vNh-VW-MSX.title" = "Notifications";
+
+/* Class = "NSMenuItem"; title = "Help"; ObjectID = "wpr-3q-Mcd"; */
+"wpr-3q-Mcd.title" = "Help";
