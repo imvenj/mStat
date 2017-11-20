@@ -246,7 +246,7 @@
 				TargetAttributes = {
 					2549EE701FBEB48F00BBAA84 = {
 						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					2549EE871FBEB51100BBAA84 = {
 						CreatedOnToolsVersion = 9.1;
@@ -425,7 +425,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -477,7 +477,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -490,14 +490,15 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = mStat/mStat.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 32Y52676KN;
 				INFOPLIST_FILE = mStat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = me.venj.mStat;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.venj.mStat-Mac";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "3195fcd9-4e65-490d-b31c-502371eaab24";
+				PROVISIONING_PROFILE_SPECIFIER = "mStat Dev Profile";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -508,14 +509,16 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = mStat/mStat.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 32Y52676KN;
 				INFOPLIST_FILE = mStat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = me.venj.mStat;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.venj.mStat-Mac";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "ecfc44cf-7029-4621-b626-6378241e54d7";
+				PROVISIONING_PROFILE_SPECIFIER = "mStat MAS Deploy Profile";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -531,7 +534,7 @@
 				DEVELOPMENT_TEAM = 32Y52676KN;
 				INFOPLIST_FILE = "$(SRCROOT)/mStat Widget/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "me.venj.mStat.mStat-Widget";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.venj.mStat-Mac.mStat-Widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -552,7 +555,7 @@
 				DEVELOPMENT_TEAM = 32Y52676KN;
 				INFOPLIST_FILE = "$(SRCROOT)/mStat Widget/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "me.venj.mStat.mStat-Widget";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.venj.mStat-Mac.mStat-Widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
