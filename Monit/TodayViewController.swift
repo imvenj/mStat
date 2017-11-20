@@ -160,12 +160,12 @@ class TodayViewController: NSViewController, NCWidgetProviding {
     func updateBatteryInformation() {
         // Battery
         var battery = Battery()
-        if battery.open() != kIOReturnSuccess {
+        if battery.open() == kIOReturnSuccess {
             // Mac Desktop?
             batteryInfoLabel.stringValue = NSLocalizedString("Battery not exists.", comment: "Battery not exists.")
             batteryPercentLabel.stringValue = "0%"
             batteryProgressBar.current = 100
-            batteryProgressBar.tintColor = NSColor.gray
+            batteryProgressBar.tintColor = NSColor.lightGray
             batteryTimeLabel.stringValue = NSLocalizedString("AC Power", comment: "AC Power")
         }
         else {
