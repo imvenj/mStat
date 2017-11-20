@@ -16,6 +16,16 @@
 		2549EE911FBEB51100BBAA84 /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2549EE8F1FBEB51100BBAA84 /* TodayViewController.xib */; };
 		2549EE951FBEB51100BBAA84 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2549EE931FBEB51100BBAA84 /* InfoPlist.strings */; };
 		2549EE991FBEB51100BBAA84 /* Monit.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2549EE881FBEB51100BBAA84 /* Monit.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		25842AD61FC2712800579713 /* Battery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25842AD21FC2712700579713 /* Battery.swift */; };
+		25842AD71FC2712800579713 /* IOReturn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25842AD31FC2712700579713 /* IOReturn.swift */; };
+		25842AD81FC2712800579713 /* Process.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25842AD41FC2712700579713 /* Process.swift */; };
+		25842AD91FC2712800579713 /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25842AD51FC2712700579713 /* System.swift */; };
+		25842ADE1FC2719800579713 /* data_usage.c in Sources */ = {isa = PBXBuildFile; fileRef = 25842ADD1FC2719800579713 /* data_usage.c */; };
+		25842AE01FC2722D00579713 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25842ADF1FC2722D00579713 /* ProgressBar.swift */; };
+		25842AE11FC2777000579713 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2549EE781FBEB48F00BBAA84 /* Assets.xcassets */; };
+		259202231FC2ABF800F93FD5 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259202221FC2ABF800F93FD5 /* Device.swift */; };
+		259202251FC2AC6300F93FD5 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259202241FC2AC6300F93FD5 /* StringExtension.swift */; };
+		259202271FC2B75900F93FD5 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259202261FC2B75900F93FD5 /* Theme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +50,16 @@
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		25842AD11FC2706200579713 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +77,17 @@
 		2549EE921FBEB51100BBAA84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2549EE941FBEB51100BBAA84 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2549EE961FBEB51100BBAA84 /* Monit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Monit.entitlements; sourceTree = "<group>"; };
+		25842AD21FC2712700579713 /* Battery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Battery.swift; sourceTree = "<group>"; };
+		25842AD31FC2712700579713 /* IOReturn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IOReturn.swift; sourceTree = "<group>"; };
+		25842AD41FC2712700579713 /* Process.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Process.swift; sourceTree = "<group>"; };
+		25842AD51FC2712700579713 /* System.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
+		25842ADB1FC2719700579713 /* Monit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Monit-Bridging-Header.h"; sourceTree = "<group>"; };
+		25842ADC1FC2719800579713 /* data_usage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = data_usage.h; sourceTree = "<group>"; };
+		25842ADD1FC2719800579713 /* data_usage.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = data_usage.c; sourceTree = "<group>"; };
+		25842ADF1FC2722D00579713 /* ProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		259202221FC2ABF800F93FD5 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		259202241FC2AC6300F93FD5 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		259202261FC2B75900F93FD5 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,13 +152,32 @@
 		2549EE8C1FBEB51100BBAA84 /* Monit */ = {
 			isa = PBXGroup;
 			children = (
+				25842ADA1FC2713900579713 /* SystemKit */,
+				25842ADC1FC2719800579713 /* data_usage.h */,
+				25842ADD1FC2719800579713 /* data_usage.c */,
+				25842ADF1FC2722D00579713 /* ProgressBar.swift */,
+				259202221FC2ABF800F93FD5 /* Device.swift */,
+				259202241FC2AC6300F93FD5 /* StringExtension.swift */,
 				2549EE8D1FBEB51100BBAA84 /* TodayViewController.swift */,
+				259202261FC2B75900F93FD5 /* Theme.swift */,
 				2549EE8F1FBEB51100BBAA84 /* TodayViewController.xib */,
 				2549EE921FBEB51100BBAA84 /* Info.plist */,
 				2549EE931FBEB51100BBAA84 /* InfoPlist.strings */,
 				2549EE961FBEB51100BBAA84 /* Monit.entitlements */,
+				25842ADB1FC2719700579713 /* Monit-Bridging-Header.h */,
 			);
 			path = Monit;
+			sourceTree = "<group>";
+		};
+		25842ADA1FC2713900579713 /* SystemKit */ = {
+			isa = PBXGroup;
+			children = (
+				25842AD21FC2712700579713 /* Battery.swift */,
+				25842AD31FC2712700579713 /* IOReturn.swift */,
+				25842AD41FC2712700579713 /* Process.swift */,
+				25842AD51FC2712700579713 /* System.swift */,
+			);
+			path = SystemKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +191,7 @@
 				2549EE6E1FBEB48F00BBAA84 /* Frameworks */,
 				2549EE6F1FBEB48F00BBAA84 /* Resources */,
 				2549EE9D1FBEB51100BBAA84 /* Embed App Extensions */,
+				25842AD11FC2706200579713 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -185,6 +236,7 @@
 					};
 					2549EE871FBEB51100BBAA84 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -223,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2549EE911FBEB51100BBAA84 /* TodayViewController.xib in Resources */,
+				25842AE11FC2777000579713 /* Assets.xcassets in Resources */,
 				2549EE951FBEB51100BBAA84 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,7 +296,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25842AD91FC2712800579713 /* System.swift in Sources */,
+				25842AD71FC2712800579713 /* IOReturn.swift in Sources */,
 				2549EE8E1FBEB51100BBAA84 /* TodayViewController.swift in Sources */,
+				25842AD61FC2712800579713 /* Battery.swift in Sources */,
+				25842AD81FC2712800579713 /* Process.swift in Sources */,
+				259202251FC2AC6300F93FD5 /* StringExtension.swift in Sources */,
+				25842ADE1FC2719800579713 /* data_usage.c in Sources */,
+				259202271FC2B75900F93FD5 /* Theme.swift in Sources */,
+				25842AE01FC2722D00579713 /* ProgressBar.swift in Sources */,
+				259202231FC2ABF800F93FD5 /* Device.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +464,7 @@
 				DEVELOPMENT_TEAM = 32Y52676KN;
 				INFOPLIST_FILE = mStat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = me.venj.mStat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -419,6 +482,7 @@
 				DEVELOPMENT_TEAM = 32Y52676KN;
 				INFOPLIST_FILE = mStat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = me.venj.mStat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -428,6 +492,7 @@
 		2549EE9B1FBEB51100BBAA84 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Monit/Monit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -437,6 +502,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.venj.mStat.Monit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Monit/Monit-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -444,6 +511,7 @@
 		2549EE9C1FBEB51100BBAA84 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Monit/Monit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -453,6 +521,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.venj.mStat.Monit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Monit/Monit-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
