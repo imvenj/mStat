@@ -1,0 +1,36 @@
+
+/* Class = "NSTextFieldCell"; title = "100%"; ObjectID = "CYY-yD-gBW"; */
+"CYY-yD-gBW.title" = "100%";
+
+/* Class = "NSTextFieldCell"; title = "MEM"; ObjectID = "Ek7-Uu-u73"; */
+"Ek7-Uu-u73.title" = "内存";
+
+/* Class = "NSTextFieldCell"; title = "CPU"; ObjectID = "MIm-MG-LDe"; */
+"MIm-MG-LDe.title" = "处理器";
+
+/* Class = "NSTextFieldCell"; title = "0%"; ObjectID = "OOh-E2-lek"; */
+"OOh-E2-lek.title" = "0%";
+
+/* Class = "NSTextFieldCell"; title = "0%"; ObjectID = "SvS-T4-TbU"; */
+"SvS-T4-TbU.title" = "0%";
+
+/* Class = "NSTextFieldCell"; title = "Battery"; ObjectID = "Zo1-2H-cTo"; */
+"Zo1-2H-cTo.title" = "电池";
+
+/* Class = "NSTextFieldCell"; title = "0%"; ObjectID = "fMm-YQ-bi7"; */
+"fMm-YQ-bi7.title" = "0%";
+
+/* Class = "NSTextFieldCell"; title = "NET"; ObjectID = "hby-4d-bR2"; */
+"hby-4d-bR2.title" = "网络";
+
+/* Class = "NSTextFieldCell"; title = "HDD"; ObjectID = "jcj-Z3-LIY"; */
+"jcj-Z3-LIY.title" = "硬盘";
+
+/* Class = "NSTextFieldCell"; title = "0:00"; ObjectID = "sdW-nT-6ku"; */
+"sdW-nT-6ku.title" = "0:00";
+
+/* Class = "NSTextFieldCell"; title = "999.9 KB/s"; ObjectID = "unZ-ND-WgD"; */
+"unZ-ND-WgD.title" = "999.9 KB/s";
+
+/* Class = "NSTextFieldCell"; title = "999.9 KB/s"; ObjectID = "vIx-40-4Ua"; */
+"vIx-40-4Ua.title" = "999.9 KB/s";

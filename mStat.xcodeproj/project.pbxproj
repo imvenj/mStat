@@ -28,6 +28,7 @@
 		259202271FC2B75900F93FD5 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259202261FC2B75900F93FD5 /* Theme.swift */; };
 		2592022B1FC2D57C00F93FD5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2592022A1FC2D57300F93FD5 /* Cocoa.framework */; };
 		2592022C1FC2D58D00F93FD5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2592022A1FC2D57300F93FD5 /* Cocoa.framework */; };
+		259202311FC2D80800F93FD5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 259202331FC2D80800F93FD5 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,10 @@
 		259202241FC2AC6300F93FD5 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		259202261FC2B75900F93FD5 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		2592022A1FC2D57300F93FD5 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		2592022D1FC2D6FA00F93FD5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/TodayViewController.strings"; sourceTree = "<group>"; };
+		2592022E1FC2D6FA00F93FD5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		259202321FC2D80800F93FD5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		259202341FC2D80A00F93FD5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +171,7 @@
 				259202261FC2B75900F93FD5 /* Theme.swift */,
 				259202241FC2AC6300F93FD5 /* StringExtension.swift */,
 				2549EE8D1FBEB51100BBAA84 /* TodayViewController.swift */,
+				259202331FC2D80800F93FD5 /* Localizable.strings */,
 				2549EE8F1FBEB51100BBAA84 /* TodayViewController.xib */,
 				2549EE921FBEB51100BBAA84 /* Info.plist */,
 				2549EE931FBEB51100BBAA84 /* InfoPlist.strings */,
@@ -254,6 +260,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 2549EE681FBEB48F00BBAA84;
 			productRefGroup = 2549EE721FBEB48F00BBAA84 /* Products */;
@@ -281,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2549EE911FBEB51100BBAA84 /* TodayViewController.xib in Resources */,
+				259202311FC2D80800F93FD5 /* Localizable.strings in Resources */,
 				25842AE11FC2777000579713 /* Assets.xcassets in Resources */,
 				2549EE951FBEB51100BBAA84 /* InfoPlist.strings in Resources */,
 			);
@@ -338,6 +346,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				2549EE901FBEB51100BBAA84 /* Base */,
+				2592022D1FC2D6FA00F93FD5 /* zh-Hans */,
 			);
 			name = TodayViewController.xib;
 			sourceTree = "<group>";
@@ -346,8 +355,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				2549EE941FBEB51100BBAA84 /* en */,
+				2592022E1FC2D6FA00F93FD5 /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		259202331FC2D80800F93FD5 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				259202321FC2D80800F93FD5 /* en */,
+				259202341FC2D80A00F93FD5 /* zh-Hans */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -357,6 +376,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -414,6 +434,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
