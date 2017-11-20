@@ -30,10 +30,10 @@
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customView simulatedAppContext="notificationCenter" translatesAutoresizingMaskIntoConstraints="NO" id="Hz6-mo-xeY">
-            <rect key="frame" x="0.0" y="0.0" width="341" height="258"/>
+            <rect key="frame" x="0.0" y="0.0" width="341" height="242"/>
             <subviews>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="QtH-pz-5Ca">
-                    <rect key="frame" x="8" y="241" width="35" height="17"/>
+                    <rect key="frame" x="8" y="225" width="35" height="17"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="CPU" id="MIm-MG-LDe">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -41,21 +41,21 @@
                     </textFieldCell>
                 </textField>
                 <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="B61-fv-OiR">
-                    <rect key="frame" x="49" y="241" width="17" height="17"/>
+                    <rect key="frame" x="49" y="225" width="17" height="17"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="B61-fv-OiR" secondAttribute="height" multiplier="1:1" id="FhN-PC-bPA"/>
                     </constraints>
                     <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="cpu_icon" id="B9T-kD-f3q"/>
                 </imageView>
                 <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xgq-ZI-px3">
-                    <rect key="frame" x="48" y="166" width="17" height="17"/>
+                    <rect key="frame" x="48" y="150" width="17" height="17"/>
                     <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="network_icon" id="w73-jd-YeL"/>
                 </imageView>
                 <customView translatesAutoresizingMaskIntoConstraints="NO" id="Db6-pL-RdV" customClass="ProgressBar" customModule="Monit" customModuleProvider="target">
-                    <rect key="frame" x="74" y="241" width="216" height="17"/>
+                    <rect key="frame" x="74" y="225" width="216" height="17"/>
                 </customView>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tgc-Oz-1OH">
-                    <rect key="frame" x="8" y="216" width="35" height="17"/>
+                    <rect key="frame" x="8" y="200" width="35" height="17"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="MEM" id="Ek7-Uu-u73">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -63,17 +63,17 @@
                     </textFieldCell>
                 </textField>
                 <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pYw-Y4-7Kk">
-                    <rect key="frame" x="49" y="216" width="17" height="17"/>
+                    <rect key="frame" x="49" y="200" width="17" height="17"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="pYw-Y4-7Kk" secondAttribute="height" multiplier="1:1" id="nRT-1l-g9o"/>
                     </constraints>
                     <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="memory_icon" id="gmR-g8-rPe"/>
                 </imageView>
                 <customView translatesAutoresizingMaskIntoConstraints="NO" id="ZJZ-Um-HCi" customClass="ProgressBar" customModule="Monit" customModuleProvider="target">
-                    <rect key="frame" x="74" y="216" width="216" height="17"/>
+                    <rect key="frame" x="74" y="200" width="216" height="17"/>
                 </customView>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Hk4-Gh-tVw">
-                    <rect key="frame" x="8" y="191" width="35" height="17"/>
+                    <rect key="frame" x="8" y="175" width="35" height="17"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="HDD" id="jcj-Z3-LIY">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -81,14 +81,14 @@
                     </textFieldCell>
                 </textField>
                 <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dnf-eX-q46">
-                    <rect key="frame" x="49" y="191" width="17" height="17"/>
+                    <rect key="frame" x="49" y="175" width="17" height="17"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="dnf-eX-q46" secondAttribute="height" multiplier="1:1" id="rqS-qM-evQ"/>
                     </constraints>
                     <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="hdd_icon" id="H6A-q9-cSo"/>
                 </imageView>
                 <customView translatesAutoresizingMaskIntoConstraints="NO" id="bek-rC-UCa" customClass="ProgressBar" customModule="Monit" customModuleProvider="target">
-                    <rect key="frame" x="74" y="191" width="216" height="17"/>
+                    <rect key="frame" x="74" y="175" width="216" height="17"/>
                 </customView>
                 <customView translatesAutoresizingMaskIntoConstraints="NO" id="6eb-4x-8Yh" customClass="ProgressBar" customModule="Monit" customModuleProvider="target">
                     <rect key="frame" x="111" y="25" width="120" height="17"/>
@@ -97,16 +97,12 @@
                         <constraint firstAttribute="height" constant="17" id="hr1-YC-EbU"/>
                     </constraints>
                 </customView>
-                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dbe-eB-H53">
-                    <rect key="frame" x="10" y="150" width="321" height="1"/>
-                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="seperator" id="GJN-TY-CgI"/>
-                </imageView>
                 <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eOd-hL-aqs">
                     <rect key="frame" x="10" y="77" width="321" height="1"/>
                     <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="seperator" id="4LD-n9-3Ou"/>
                 </imageView>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="TNa-uP-mVM">
-                    <rect key="frame" x="296" y="241" width="37" height="17"/>
+                    <rect key="frame" x="296" y="225" width="37" height="17"/>
                     <constraints>
                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="33" id="zLB-5T-jaI"/>
                     </constraints>
@@ -117,7 +113,7 @@
                     </textFieldCell>
                 </textField>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="BgP-pq-lTd">
-                    <rect key="frame" x="296" y="216" width="37" height="17"/>
+                    <rect key="frame" x="296" y="200" width="37" height="17"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="0%" id="OOh-E2-lek">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -125,7 +121,7 @@
                     </textFieldCell>
                 </textField>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="kl8-7D-QnJ">
-                    <rect key="frame" x="296" y="191" width="37" height="17"/>
+                    <rect key="frame" x="296" y="175" width="37" height="17"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="0%" id="fMm-YQ-bi7">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -133,7 +129,7 @@
                     </textFieldCell>
                 </textField>
                 <stackView distribution="fill" orientation="horizontal" alignment="centerY" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q05-sb-zTk">
-                    <rect key="frame" x="98" y="166" width="169" height="17"/>
+                    <rect key="frame" x="98" y="150" width="169" height="17"/>
                     <subviews>
                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="d43-d2-elI">
                             <rect key="frame" x="-2" y="0.0" width="72" height="17"/>
@@ -168,7 +164,7 @@
                     </customSpacing>
                 </stackView>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nHb-bi-rEe">
-                    <rect key="frame" x="8" y="166" width="35" height="17"/>
+                    <rect key="frame" x="8" y="150" width="35" height="17"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="NET" id="hby-4d-bR2">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -237,9 +233,7 @@
                 <constraint firstItem="BgP-pq-lTd" firstAttribute="width" secondItem="TNa-uP-mVM" secondAttribute="width" id="ACo-6r-HcT"/>
                 <constraint firstItem="6eb-4x-8Yh" firstAttribute="top" secondItem="nq4-Mc-gcQ" secondAttribute="bottom" constant="8" id="BP7-hj-FnC"/>
                 <constraint firstItem="bek-rC-UCa" firstAttribute="leading" secondItem="dnf-eX-q46" secondAttribute="trailing" constant="8" id="BRu-N4-JrW"/>
-                <constraint firstItem="Dbe-eB-H53" firstAttribute="top" secondItem="nHb-bi-rEe" secondAttribute="bottom" constant="15" id="Bwb-5m-eSJ"/>
                 <constraint firstItem="B61-fv-OiR" firstAttribute="leading" secondItem="QtH-pz-5Ca" secondAttribute="trailing" constant="8" id="CFd-NJ-8Gl"/>
-                <constraint firstItem="ZvR-JR-pck" firstAttribute="top" secondItem="Dbe-eB-H53" secondAttribute="bottom" constant="15" id="CnR-at-qEp"/>
                 <constraint firstItem="BgP-pq-lTd" firstAttribute="trailing" secondItem="TNa-uP-mVM" secondAttribute="trailing" id="D9A-5m-WPV"/>
                 <constraint firstItem="ZJZ-Um-HCi" firstAttribute="leading" secondItem="pYw-Y4-7Kk" secondAttribute="trailing" constant="8" id="Era-cj-b3i"/>
                 <constraint firstItem="tgc-Oz-1OH" firstAttribute="leading" secondItem="QtH-pz-5Ca" secondAttribute="leading" id="G7f-1l-7TI"/>
@@ -248,7 +242,6 @@
                 <constraint firstItem="BgP-pq-lTd" firstAttribute="centerY" secondItem="ZJZ-Um-HCi" secondAttribute="centerY" id="K10-D5-IUg"/>
                 <constraint firstItem="kl8-7D-QnJ" firstAttribute="leading" secondItem="bek-rC-UCa" secondAttribute="trailing" constant="8" id="KgN-EV-UGB"/>
                 <constraint firstItem="xgq-ZI-px3" firstAttribute="centerY" secondItem="nHb-bi-rEe" secondAttribute="centerY" id="M48-qd-Coy"/>
-                <constraint firstItem="Dbe-eB-H53" firstAttribute="leading" secondItem="Hk4-Gh-tVw" secondAttribute="leading" id="Nlj-1R-Woa"/>
                 <constraint firstAttribute="bottom" secondItem="aT4-9w-v5M" secondAttribute="bottom" id="Oy6-ht-Nt3"/>
                 <constraint firstItem="pYw-Y4-7Kk" firstAttribute="height" secondItem="tgc-Oz-1OH" secondAttribute="height" id="QTB-wX-AOZ"/>
                 <constraint firstItem="dnf-eX-q46" firstAttribute="width" secondItem="dnf-eX-q46" secondAttribute="height" multiplier="1:1" id="R9G-AA-qwn"/>
@@ -257,6 +250,7 @@
                 <constraint firstItem="TNa-uP-mVM" firstAttribute="centerY" secondItem="Db6-pL-RdV" secondAttribute="centerY" id="TSL-J6-Igd"/>
                 <constraint firstItem="tgc-Oz-1OH" firstAttribute="top" secondItem="QtH-pz-5Ca" secondAttribute="bottom" constant="8" id="V7L-hV-kP0"/>
                 <constraint firstItem="eOd-hL-aqs" firstAttribute="top" secondItem="HKF-9h-I29" secondAttribute="bottom" constant="15" id="V7S-Be-oOF"/>
+                <constraint firstItem="ZvR-JR-pck" firstAttribute="top" secondItem="Q05-sb-zTk" secondAttribute="bottom" constant="15" id="VZZ-Nc-OxP"/>
                 <constraint firstItem="k76-cu-SUq" firstAttribute="centerY" secondItem="6eb-4x-8Yh" secondAttribute="centerY" id="W6h-7U-8Lm"/>
                 <constraint firstItem="QtH-pz-5Ca" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="XuC-L0-kCg"/>
                 <constraint firstItem="Fen-Ad-vCg" firstAttribute="leading" secondItem="6eb-4x-8Yh" secondAttribute="trailing" constant="10" id="YMj-UO-s4u"/>
@@ -274,7 +268,6 @@
                 <constraint firstItem="ZJZ-Um-HCi" firstAttribute="trailing" secondItem="Db6-pL-RdV" secondAttribute="trailing" id="h6r-8T-xza"/>
                 <constraint firstItem="ZJZ-Um-HCi" firstAttribute="top" secondItem="pYw-Y4-7Kk" secondAttribute="top" id="ixe-Sa-xaF"/>
                 <constraint firstItem="pYw-Y4-7Kk" firstAttribute="width" secondItem="pYw-Y4-7Kk" secondAttribute="height" multiplier="1:1" id="j8b-au-if6"/>
-                <constraint firstItem="Dbe-eB-H53" firstAttribute="trailing" secondItem="TNa-uP-mVM" secondAttribute="trailing" id="j9i-U2-9CO"/>
                 <constraint firstItem="f4U-hu-xaL" firstAttribute="centerX" secondItem="bek-rC-UCa" secondAttribute="centerX" id="jOc-yb-ZcF"/>
                 <constraint firstItem="QtH-pz-5Ca" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="10" id="jpA-bZ-MtJ"/>
                 <constraint firstItem="nHb-bi-rEe" firstAttribute="leading" secondItem="Hk4-Gh-tVw" secondAttribute="leading" id="kD4-Gq-G15"/>

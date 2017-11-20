@@ -30,6 +30,7 @@ class TodayViewController: NSViewController, NCWidgetProviding {
     var timer: Timer?
     var sys = System()
     var previousDataUsage: data_usage? = nil
+    var currentInterface: String?
     
     let updateInterval: UInt = 1
     
@@ -58,10 +59,13 @@ class TodayViewController: NSViewController, NCWidgetProviding {
         // time we called you
         
         sys = System()
+        let route = Device.current.defaultRoute()
+        currentInterface = route.device6 != nil ? route.device6! : route.device
         if timer == nil {
             timer = Timer.scheduledTimer(timeInterval: Double(updateInterval), target: self, selector: #selector(updateUI(_:)), userInfo: nil, repeats: true)
         }
         updateUI(nil)
+        updateDiskInfomation()
         updateBatteryInformation()
         completionHandler(.newData)
     }
@@ -74,7 +78,7 @@ class TodayViewController: NSViewController, NCWidgetProviding {
             let cpu = self.sys.usageCPU()
             let cpuUsed = 100.0 - cpu.idle
             self.cpuProgressBar.current = cpuUsed
-            self.cpuPercentLabel.stringValue = "\(Int(cpuUsed))%"
+            self.cpuPercentLabel.stringValue = String(format:"%.0f%%", cpuUsed)
             switch cpuUsed {
             case 0..<50:
                 self.cpuProgressBar.tintColor = Theme.normalColor
@@ -90,7 +94,7 @@ class TodayViewController: NSViewController, NCWidgetProviding {
             let mem = System.memoryUsage()
             let memUsed = (mem.wired + mem.active + mem.compressed) * 100 / System.physicalMemory(.gigabyte)
             self.memoryProgressBar.current = memUsed
-            self.memoryPercentLabel.stringValue = "\(Int(memUsed))%"
+            self.memoryPercentLabel.stringValue = String(format:"%.0f%%", memUsed)
             
             switch memUsed {
             case 0..<50:
@@ -102,14 +106,10 @@ class TodayViewController: NSViewController, NCWidgetProviding {
             default:
                 self.memoryProgressBar.tintColor = Theme.normalColor
             }
-            
-            // Disk
-            // TODO: Implement usage.
         }
         
         // Networking
-        let route = Device.current.defaultRoute()
-        if let interface = route.device6 != nil ? route.device6! : route.device {
+        if let interface = currentInterface {
             let dataUsage = get_data_usage(interface)
             if let previousDataUsage = previousDataUsage {
                 let downloadSpeed = (dataUsage.download - previousDataUsage.download) / UInt64(updateInterval)
@@ -157,10 +157,33 @@ class TodayViewController: NSViewController, NCWidgetProviding {
         }
     }
     
+    func updateDiskInfomation() {
+        // Disk
+        let fm = FileManager.default
+        if let attributes = try? fm.attributesOfFileSystem(forPath: "/"),
+            let totalSpace = attributes[FileAttributeKey.systemSize] as? Double,
+            let freeSpace = attributes[FileAttributeKey.systemFreeSize] as? Double {
+            // Successfully get disk size
+            let hddUsed = freeSpace * 100.0 / totalSpace
+            hddProgressBar.current = hddUsed
+            hddPercentLabel.stringValue = String(format:"%.0f%%", hddUsed)
+            switch hddUsed {
+            case 0..<50:
+                hddProgressBar.tintColor = Theme.normalColor
+            case 50..<80:
+                hddProgressBar.tintColor = Theme.warningColor
+            case 80...:
+                hddProgressBar.tintColor = Theme.criticalColor
+            default:
+                hddProgressBar.tintColor = Theme.normalColor
+            }
+        }
+    }
+    
     func updateBatteryInformation() {
         // Battery
         var battery = Battery()
-        if battery.open() == kIOReturnSuccess {
+        if battery.open() != kIOReturnSuccess {
             // Mac Desktop?
             batteryInfoLabel.stringValue = NSLocalizedString("Battery not exists.", comment: "Battery not exists.")
             batteryPercentLabel.stringValue = "0%"
@@ -198,7 +221,6 @@ class TodayViewController: NSViewController, NCWidgetProviding {
         }
         
         _ = battery.close()
-        
     }
     
     func formattedSpeedString(with usage: UInt64) -> String {
