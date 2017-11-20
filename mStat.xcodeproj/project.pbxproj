@@ -26,6 +26,8 @@
 		259202231FC2ABF800F93FD5 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259202221FC2ABF800F93FD5 /* Device.swift */; };
 		259202251FC2AC6300F93FD5 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259202241FC2AC6300F93FD5 /* StringExtension.swift */; };
 		259202271FC2B75900F93FD5 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259202261FC2B75900F93FD5 /* Theme.swift */; };
+		2592022B1FC2D57C00F93FD5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2592022A1FC2D57300F93FD5 /* Cocoa.framework */; };
+		2592022C1FC2D58D00F93FD5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2592022A1FC2D57300F93FD5 /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +90,7 @@
 		259202221FC2ABF800F93FD5 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		259202241FC2AC6300F93FD5 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		259202261FC2B75900F93FD5 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		2592022A1FC2D57300F93FD5 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2592022B1FC2D57C00F93FD5 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2592022C1FC2D58D00F93FD5 /* Cocoa.framework in Frameworks */,
 				2549EE8B1FBEB51100BBAA84 /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,6 +149,7 @@
 		2549EE891FBEB51100BBAA84 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2592022A1FC2D57300F93FD5 /* Cocoa.framework */,
 				2549EE8A1FBEB51100BBAA84 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
