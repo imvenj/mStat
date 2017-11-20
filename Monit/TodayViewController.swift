@@ -19,6 +19,13 @@ class TodayViewController: NSViewController, NCWidgetProviding {
     @IBOutlet weak var hddPercentLabel: NSTextField!
     @IBOutlet weak var downloadLabel: NSTextField!
     @IBOutlet weak var uploadLabel: NSTextField!
+    @IBOutlet weak var loadLabel: NSTextField!
+    @IBOutlet weak var uptimeLabel: NSTextField!
+    @IBOutlet weak var batteryTitleLabal: NSTextField!
+    @IBOutlet weak var batteryPercentLabel: NSTextField!
+    @IBOutlet weak var batteryProgressBar: ProgressBar!
+    @IBOutlet weak var batteryTimeLabel: NSTextField!
+    @IBOutlet weak var batteryInfoLabel: NSTextField!
     
     var timer: Timer?
     var sys = System()
@@ -51,10 +58,11 @@ class TodayViewController: NSViewController, NCWidgetProviding {
         // time we called you
         
         sys = System()
-        updateUI(nil)
         if timer == nil {
             timer = Timer.scheduledTimer(timeInterval: Double(updateInterval), target: self, selector: #selector(updateUI(_:)), userInfo: nil, repeats: true)
         }
+        updateUI(nil)
+        updateBatteryInformation()
         completionHandler(.newData)
     }
     
@@ -68,11 +76,11 @@ class TodayViewController: NSViewController, NCWidgetProviding {
             self.cpuProgressBar.current = cpuUsed
             self.cpuPercentLabel.stringValue = "\(Int(cpuUsed))%"
             switch cpuUsed {
-            case 0..<40:
+            case 0..<50:
                 self.cpuProgressBar.tintColor = Theme.normalColor
-            case 40..<70:
+            case 50..<80:
                 self.cpuProgressBar.tintColor = Theme.warningColor
-            case 70...:
+            case 80...:
                 self.cpuProgressBar.tintColor = Theme.criticalColor
             default:
                 self.cpuProgressBar.tintColor = Theme.normalColor
@@ -94,8 +102,9 @@ class TodayViewController: NSViewController, NCWidgetProviding {
             default:
                 self.memoryProgressBar.tintColor = Theme.normalColor
             }
-            // Disk
             
+            // Disk
+            // TODO: Implement usage.
         }
         
         // Networking
@@ -133,6 +142,63 @@ class TodayViewController: NSViewController, NCWidgetProviding {
                 self.uploadLabel.stringValue = "--"
             }
         }
+        
+        // Load and uptime
+        let loadAverage = System.loadAverage().map { String(format:"%.2f", $0) }.joined(separator: " ")
+        let loadAverageString = String(format: NSLocalizedString("Load Average: %@", comment: "Load Average: %@"), loadAverage)
+        let uptime = System.uptime()
+        let uptimeString = String(format: NSLocalizedString("Uptime: %dd %dh %dm %ds", comment: "Uptime: %dd %dh %dm %ds"), uptime.days, uptime.hrs, uptime.mins, uptime.secs)
+        
+        DispatchQueue.main.async { [weak self] in
+            guard let `self` = self else { return }
+            // Update UI
+            self.loadLabel.stringValue = loadAverageString
+            self.uptimeLabel.stringValue = uptimeString
+        }
+    }
+    
+    func updateBatteryInformation() {
+        // Battery
+        var battery = Battery()
+        if battery.open() != kIOReturnSuccess {
+            // Mac Desktop?
+            batteryInfoLabel.stringValue = NSLocalizedString("Battery not exists.", comment: "Battery not exists.")
+            batteryPercentLabel.stringValue = "0%"
+            batteryProgressBar.current = 100
+            batteryProgressBar.tintColor = NSColor.gray
+            batteryTimeLabel.stringValue = NSLocalizedString("AC Power", comment: "AC Power")
+        }
+        else {
+            let healthy = battery.maxCapactiy() * 100 / battery.designCapacity()
+            let cycles = battery.cycleCount()
+            let temperature = battery.temperature()
+            let infoString = String(format: NSLocalizedString("%d cycles, %d%% healthy, %.1f°C", comment: "%d cycles, %d%% healthy, %.1f°C"), cycles, healthy, temperature)
+            batteryInfoLabel.stringValue = infoString
+            
+            let charge = battery.charge()
+            batteryPercentLabel.stringValue = String(format: "%.1f%%", charge)
+            batteryProgressBar.current = charge
+            switch charge {
+            case 20...:
+                self.batteryProgressBar.tintColor = Theme.normalColor
+            case 0..<20:
+                self.batteryProgressBar.tintColor = Theme.criticalColor
+            default:
+                self.memoryProgressBar.tintColor = Theme.normalColor
+            }
+            if battery.isCharging() {
+                batteryTimeLabel.stringValue = NSLocalizedString("Charging", comment: "Charging")
+            }
+            else if battery.isACPowered() {
+                batteryTimeLabel.stringValue = NSLocalizedString("AC Power", comment: "AC Power")
+            }
+            else {
+                batteryTimeLabel.stringValue = battery.timeRemainingFormatted()
+            }
+        }
+        
+        _ = battery.close()
+        
     }
     
     func formattedSpeedString(with usage: UInt64) -> String {
