@@ -39,6 +39,7 @@
 		2592022B1FC2D57C00F93FD5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2592022A1FC2D57300F93FD5 /* Cocoa.framework */; };
 		2592022C1FC2D58D00F93FD5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2592022A1FC2D57300F93FD5 /* Cocoa.framework */; };
 		259202311FC2D80800F93FD5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 259202331FC2D80800F93FD5 /* Localizable.strings */; };
+		25D3B6471FC6B9630035FD01 /* NSAlertExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D3B6461FC6B9630035FD01 /* NSAlertExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +120,7 @@
 		259202321FC2D80800F93FD5 /* en */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		259202341FC2D80A00F93FD5 /* zh-Hans */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		2592023C1FC2FA4F00F93FD5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		25D3B6461FC6B9630035FD01 /* NSAlertExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSAlertExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 				254963F51FC67A1200D60053 /* PreferenceWindowController.swift */,
 				254963F91FC67A5600D60053 /* PreferenceTabViewController.swift */,
 				254963F71FC67A2A00D60053 /* GeneralPreferenceViewController.swift */,
+				25D3B6461FC6B9630035FD01 /* NSAlertExtension.swift */,
 				254964081FC69B3600D60053 /* Configuration.swift */,
 				2549640B1FC69FC700D60053 /* NSColor+Components.swift */,
 				254964011FC682F300D60053 /* Localizable.strings */,
@@ -349,6 +352,7 @@
 				254963FA1FC67A5600D60053 /* PreferenceTabViewController.swift in Sources */,
 				2549EE751FBEB48F00BBAA84 /* AppDelegate.swift in Sources */,
 				2549640C1FC69FC700D60053 /* NSColor+Components.swift in Sources */,
+				25D3B6471FC6B9630035FD01 /* NSAlertExtension.swift in Sources */,
 				254964091FC69B3600D60053 /* Configuration.swift in Sources */,
 				254963F41FC67A0000D60053 /* MainWindowController.swift in Sources */,
 			);

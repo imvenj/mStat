@@ -64,16 +64,21 @@ class GeneralPreferenceViewController: NSViewController {
     }
     
     @IBAction func resetToDefault(_ sender: Any) {
-        normalColorWell.color = Theme.normalColor
-        warningColorWell.color = Theme.warningColor
-        criticalColorWell.color = Theme.criticalColor
-        refreshRatePopupButton.select(refreshRatePopupButton.menu?.items[1])
-        
-        // Save to user defaults
-        config.normalColor = Theme.normalColor
-        config.warningColor = Theme.warningColor
-        config.criticalColor = Theme.criticalColor
-        config.refreshRate = RefreshRate.normal.rawValue
+        NSAlert.alert(withMessageText: NSLocalizedString("Reset Settings", comment: "Reset Settings"), informativeText: NSLocalizedString("You are going to reset current settings to default values. You will lose all your customizations. \n\n Are you sure?", comment: "You are going to reset current settings to default values. You will lose all your customizations. \n\n Are you sure?"), firstButtonTitle: NSLocalizedString("Cancel", comment: "Cancel"), secondButtonTitle: NSLocalizedString("Reset", comment: "Reset"), showInWindow: view.window, asSheet: false) { [weak self] (response) in
+            guard let `self` = self else { return }
+            if response == .alertSecondButtonReturn {
+                self.normalColorWell.color = Theme.normalColor
+                self.warningColorWell.color = Theme.warningColor
+                self.criticalColorWell.color = Theme.criticalColor
+                self.refreshRatePopupButton.select(self.refreshRatePopupButton.menu?.items[1])
+                
+                // Save to user defaults
+                self.config.normalColor = Theme.normalColor
+                self.config.warningColor = Theme.warningColor
+                self.config.criticalColor = Theme.criticalColor
+                self.config.refreshRate = RefreshRate.normal.rawValue
+            }
+        }
     }
     
     func selectMenuItem(by refreshRate: RefreshRate) {
