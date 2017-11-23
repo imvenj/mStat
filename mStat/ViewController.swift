@@ -22,6 +22,11 @@ class ViewController: NSViewController {
         }
     }
 
-
+    @IBAction func showPreferences(_ sender: Any) {
+        if let windowController = view.window?.windowController as? MainWindowController {
+            windowController.showAppPreferences(sender)
+        }
+    }
+    
 }
 

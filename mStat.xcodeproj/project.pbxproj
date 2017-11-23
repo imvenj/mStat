@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		254963F41FC67A0000D60053 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254963F31FC67A0000D60053 /* MainWindowController.swift */; };
+		254963F61FC67A1200D60053 /* PreferenceWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254963F51FC67A1200D60053 /* PreferenceWindowController.swift */; };
+		254963F81FC67A2A00D60053 /* GeneralPreferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254963F71FC67A2A00D60053 /* GeneralPreferenceViewController.swift */; };
+		254963FA1FC67A5600D60053 /* PreferenceTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254963F91FC67A5600D60053 /* PreferenceTabViewController.swift */; };
+		254963FF1FC682F300D60053 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 254964011FC682F300D60053 /* Localizable.strings */; };
 		2549EE751FBEB48F00BBAA84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2549EE741FBEB48F00BBAA84 /* AppDelegate.swift */; };
 		2549EE771FBEB48F00BBAA84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2549EE761FBEB48F00BBAA84 /* ViewController.swift */; };
 		2549EE791FBEB48F00BBAA84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2549EE781FBEB48F00BBAA84 /* Assets.xcassets */; };
@@ -66,6 +71,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		254963F31FC67A0000D60053 /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		254963F51FC67A1200D60053 /* PreferenceWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceWindowController.swift; sourceTree = "<group>"; };
+		254963F71FC67A2A00D60053 /* GeneralPreferenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralPreferenceViewController.swift; sourceTree = "<group>"; };
+		254963F91FC67A5600D60053 /* PreferenceTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceTabViewController.swift; sourceTree = "<group>"; };
+		254964001FC682F300D60053 /* en */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		254964021FC682F800D60053 /* Base */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		254964031FC682FF00D60053 /* zh-Hans */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		254964041FC6831A00D60053 /* Base */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		254964061FC6856D00D60053 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		2549EE711FBEB48F00BBAA84 /* mStat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mStat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2549EE741FBEB48F00BBAA84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2549EE761FBEB48F00BBAA84 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -96,7 +110,6 @@
 		2592022E1FC2D6FA00F93FD5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		259202321FC2D80800F93FD5 /* en */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		259202341FC2D80A00F93FD5 /* zh-Hans */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		2592023A1FC2FA4E00F93FD5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		2592023C1FC2FA4F00F93FD5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,6 +158,11 @@
 			children = (
 				2549EE741FBEB48F00BBAA84 /* AppDelegate.swift */,
 				2549EE761FBEB48F00BBAA84 /* ViewController.swift */,
+				254963F31FC67A0000D60053 /* MainWindowController.swift */,
+				254963F51FC67A1200D60053 /* PreferenceWindowController.swift */,
+				254963F91FC67A5600D60053 /* PreferenceTabViewController.swift */,
+				254963F71FC67A2A00D60053 /* GeneralPreferenceViewController.swift */,
+				254964011FC682F300D60053 /* Localizable.strings */,
 				2549EE781FBEB48F00BBAA84 /* Assets.xcassets */,
 				2549EE7A1FBEB48F00BBAA84 /* Main.storyboard */,
 				2549EE7D1FBEB48F00BBAA84 /* Info.plist */,
@@ -281,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2549EE791FBEB48F00BBAA84 /* Assets.xcassets in Resources */,
+				254963FF1FC682F300D60053 /* Localizable.strings in Resources */,
 				2549EE7C1FBEB48F00BBAA84 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,8 +322,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				254963F81FC67A2A00D60053 /* GeneralPreferenceViewController.swift in Sources */,
+				254963F61FC67A1200D60053 /* PreferenceWindowController.swift in Sources */,
 				2549EE771FBEB48F00BBAA84 /* ViewController.swift in Sources */,
+				254963FA1FC67A5600D60053 /* PreferenceTabViewController.swift in Sources */,
 				2549EE751FBEB48F00BBAA84 /* AppDelegate.swift in Sources */,
+				254963F41FC67A0000D60053 /* MainWindowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,12 +359,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		254964011FC682F300D60053 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				254964001FC682F300D60053 /* en */,
+				254964021FC682F800D60053 /* Base */,
+				254964031FC682FF00D60053 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		2549EE7A1FBEB48F00BBAA84 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				2549EE7B1FBEB48F00BBAA84 /* Base */,
-				2592023A1FC2FA4E00F93FD5 /* en */,
 				2592023C1FC2FA4F00F93FD5 /* zh-Hans */,
+				254964061FC6856D00D60053 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -369,6 +402,7 @@
 			children = (
 				259202321FC2D80800F93FD5 /* en */,
 				259202341FC2D80A00F93FD5 /* zh-Hans */,
+				254964041FC6831A00D60053 /* Base */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -490,6 +524,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = mStat/mStat.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 32Y52676KN;

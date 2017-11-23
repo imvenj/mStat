@@ -14,6 +14,9 @@
 /* Class = "NSMenuItem"; title = "About mStat"; ObjectID = "5kV-Vb-QxS"; */
 "5kV-Vb-QxS.title" = "关于 mStat";
 
+/* Class = "NSTabViewItem"; label = "General"; ObjectID = "6QA-QU-4pj"; */
+"6QA-QU-4pj.label" = "通用";
+
 /* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
 "AYu-sK-qS6.title" = "Main Menu";
 
@@ -37,6 +40,9 @@
 
 /* Class = "NSMenuItem"; title = "Bring All to Front"; ObjectID = "LE2-aR-0XJ"; */
 "LE2-aR-0XJ.title" = "前置全部窗口";
+
+/* Class = "NSViewController"; title = "General"; ObjectID = "NGR-cb-REa"; */
+"NGR-cb-REa.title" = "通用";
 
 /* Class = "NSMenuItem"; title = "Services"; ObjectID = "NMo-om-nkz"; */
 "NMo-om-nkz.title" = "服务";
@@ -65,6 +71,9 @@
 /* Class = "NSMenuItem"; title = "Window"; ObjectID = "aUF-d1-5bR"; */
 "aUF-d1-5bR.title" = "窗口";
 
+/* Class = "NSButtonCell"; title = "Preferences"; ObjectID = "bpf-lW-wjE"; */
+"bpf-lW-wjE.title" = "设置";
+
 /* Class = "NSMenu"; title = "Services"; ObjectID = "hz9-B4-Xy5"; */
 "hz9-B4-Xy5.title" = "服务";
 
@@ -82,3 +91,6 @@
 
 /* Class = "NSMenuItem"; title = "Help"; ObjectID = "wpr-3q-Mcd"; */
 "wpr-3q-Mcd.title" = "帮助";
+
+/* Class = "NSWindow"; title = "General"; ObjectID = "yXi-A5-ZZY"; */
+"yXi-A5-ZZY.title" = "通用";
