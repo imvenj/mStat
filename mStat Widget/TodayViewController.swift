@@ -183,7 +183,7 @@ class TodayViewController: NSViewController, NCWidgetProviding {
             let totalSpace = attributes[FileAttributeKey.systemSize] as? Double,
             let freeSpace = attributes[FileAttributeKey.systemFreeSize] as? Double {
             // Successfully get disk size
-            let hddUsed = freeSpace * 100.0 / totalSpace
+            let hddUsed = (totalSpace - freeSpace) * 100.0 / totalSpace
             hddProgressBar.current = hddUsed
             hddPercentLabel.stringValue = String(format:"%.0f%%", hddUsed)
             switch hddUsed {
