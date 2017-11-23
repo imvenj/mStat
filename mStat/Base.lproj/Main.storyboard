@@ -183,13 +183,156 @@
             <objects>
                 <viewController title="General" id="NGR-cb-REa" customClass="GeneralPreferenceViewController" customModule="mStat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="dI5-Py-1PT">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="510" height="214"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QOv-ei-i6x">
+                                <rect key="frame" x="128" y="177" width="94" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Normal Color:" id="de4-BY-iGD">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fHJ-NQ-4UM">
+                                <rect key="frame" x="128" y="146" width="94" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Warning Color:" id="Nr0-SO-jYt">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rJy-PJ-PbS">
+                                <rect key="frame" x="128" y="115" width="94" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Critical Color:" id="VEl-He-hYD">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <colorWell translatesAutoresizingMaskIntoConstraints="NO" id="Jjz-F1-GXg">
+                                <rect key="frame" x="228" y="174" width="44" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="kAt-F0-tAC"/>
+                                    <constraint firstAttribute="width" constant="44" id="zef-h0-qtm"/>
+                                </constraints>
+                                <color key="color" red="0.16800000000000001" green="0.67400000000000004" blue="0.17599999999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="colorChanged:" target="NGR-cb-REa" id="Yeq-SZ-Jep"/>
+                                </connections>
+                            </colorWell>
+                            <colorWell tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="gl5-Gz-tmU">
+                                <rect key="frame" x="228" y="143" width="44" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="Z3Y-j5-07t"/>
+                                    <constraint firstAttribute="height" constant="23" id="mcP-lp-2M2"/>
+                                </constraints>
+                                <color key="color" red="0.878" green="0.627" blue="0.156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="colorChanged:" target="NGR-cb-REa" id="qib-QP-QWH"/>
+                                </connections>
+                            </colorWell>
+                            <colorWell tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="XWO-Ai-Wn2">
+                                <rect key="frame" x="228" y="112" width="44" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="1zk-ra-WHQ"/>
+                                    <constraint firstAttribute="width" constant="44" id="gs5-ss-kX7"/>
+                                </constraints>
+                                <color key="color" red="0.81899999999999995" green="0.28199999999999997" blue="0.247" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="colorChanged:" target="NGR-cb-REa" id="w8j-QF-UM9"/>
+                                </connections>
+                            </colorWell>
+                            <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="SNu-yJ-U2P">
+                                <rect key="frame" x="226" y="68" width="125" height="26"/>
+                                <popUpButtonCell key="cell" type="push" title="Normal (1s)" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" tag="1" imageScaling="proportionallyDown" inset="2" selectedItem="2cv-SQ-IY5" id="f7z-wu-feV">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" id="E8l-NL-PkW">
+                                        <items>
+                                            <menuItem title="Fast (0.5s)" id="7NL-ul-BGZ"/>
+                                            <menuItem title="Normal (1s)" state="on" tag="1" id="2cv-SQ-IY5"/>
+                                            <menuItem title="Slow (2s)" tag="2" id="Soh-XZ-Zc7"/>
+                                            <menuItem title="Very Slow (5s)" tag="3" id="DxI-3w-OBb"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                                <connections>
+                                    <action selector="refreshRateChanged:" target="NGR-cb-REa" id="0f0-rJ-OLE"/>
+                                </connections>
+                            </popUpButton>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="f5B-C1-Z19">
+                                <rect key="frame" x="358" y="13" width="138" height="32"/>
+                                <buttonCell key="cell" type="push" title="Reset to Default" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Uua-IX-7A3">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="resetToDefault:" target="NGR-cb-REa" id="q6G-tu-wCM"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="oqx-rP-K8M">
+                                <rect key="frame" x="20" y="22" width="309" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="All the settings will take effect during data update." id="78F-F0-gUc">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlShadowColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="I2O-Ll-F9P">
+                                <rect key="frame" x="136" y="73" width="86" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Refresh Rate:" id="yDC-f6-z0J">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="oqx-rP-K8M" firstAttribute="leading" secondItem="dI5-Py-1PT" secondAttribute="leading" constant="22" id="47q-jw-qSW"/>
+                            <constraint firstItem="QOv-ei-i6x" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dI5-Py-1PT" secondAttribute="leading" constant="20" symbolic="YES" id="4G9-pu-mc7"/>
+                            <constraint firstItem="I2O-Ll-F9P" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dI5-Py-1PT" secondAttribute="leading" constant="20" symbolic="YES" id="Axx-ow-GXu"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Jjz-F1-GXg" secondAttribute="trailing" constant="20" symbolic="YES" id="DJk-0w-QF5"/>
+                            <constraint firstItem="QOv-ei-i6x" firstAttribute="centerX" secondItem="dI5-Py-1PT" secondAttribute="centerX" constant="-80" id="DSx-Un-PFF"/>
+                            <constraint firstItem="I2O-Ll-F9P" firstAttribute="trailing" secondItem="rJy-PJ-PbS" secondAttribute="trailing" id="FLq-Vq-2wm"/>
+                            <constraint firstItem="gl5-Gz-tmU" firstAttribute="leading" secondItem="Jjz-F1-GXg" secondAttribute="leading" id="FZ2-Qp-fXa"/>
+                            <constraint firstItem="fHJ-NQ-4UM" firstAttribute="trailing" secondItem="QOv-ei-i6x" secondAttribute="trailing" id="H5g-iT-FTu"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="SNu-yJ-U2P" secondAttribute="trailing" constant="20" symbolic="YES" id="Ozw-3e-DcE"/>
+                            <constraint firstItem="SNu-yJ-U2P" firstAttribute="leading" secondItem="I2O-Ll-F9P" secondAttribute="trailing" constant="8" id="Peg-cH-cFj"/>
+                            <constraint firstAttribute="bottom" secondItem="oqx-rP-K8M" secondAttribute="bottom" constant="22" id="TCx-IF-aNa"/>
+                            <constraint firstItem="XWO-Ai-Wn2" firstAttribute="centerY" secondItem="rJy-PJ-PbS" secondAttribute="centerY" id="TZz-S0-MYx"/>
+                            <constraint firstItem="Jjz-F1-GXg" firstAttribute="centerY" secondItem="QOv-ei-i6x" secondAttribute="centerY" id="Wlf-x1-lcY"/>
+                            <constraint firstItem="Jjz-F1-GXg" firstAttribute="leading" secondItem="QOv-ei-i6x" secondAttribute="trailing" constant="8" id="arp-fR-QYi"/>
+                            <constraint firstItem="gl5-Gz-tmU" firstAttribute="centerY" secondItem="fHJ-NQ-4UM" secondAttribute="centerY" id="clt-id-Br2"/>
+                            <constraint firstItem="f5B-C1-Z19" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="oqx-rP-K8M" secondAttribute="trailing" constant="20" id="dZ5-gp-FEo"/>
+                            <constraint firstItem="XWO-Ai-Wn2" firstAttribute="top" secondItem="gl5-Gz-tmU" secondAttribute="bottom" constant="8" id="g8l-UJ-vZP"/>
+                            <constraint firstItem="QOv-ei-i6x" firstAttribute="top" secondItem="dI5-Py-1PT" secondAttribute="top" constant="20" id="h71-fz-WaF"/>
+                            <constraint firstAttribute="trailing" secondItem="f5B-C1-Z19" secondAttribute="trailing" constant="20" id="hab-4l-VD3"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gl5-Gz-tmU" secondAttribute="trailing" constant="20" symbolic="YES" id="mJK-DI-2AP"/>
+                            <constraint firstItem="SNu-yJ-U2P" firstAttribute="centerY" secondItem="I2O-Ll-F9P" secondAttribute="centerY" id="mdG-98-aoG"/>
+                            <constraint firstItem="rJy-PJ-PbS" firstAttribute="width" secondItem="fHJ-NQ-4UM" secondAttribute="width" id="nzU-aX-tJA"/>
+                            <constraint firstItem="fHJ-NQ-4UM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dI5-Py-1PT" secondAttribute="leading" constant="20" symbolic="YES" id="oFI-xW-4p5"/>
+                            <constraint firstItem="fHJ-NQ-4UM" firstAttribute="width" secondItem="QOv-ei-i6x" secondAttribute="width" id="rkG-Yp-zWR"/>
+                            <constraint firstItem="f5B-C1-Z19" firstAttribute="top" secondItem="SNu-yJ-U2P" secondAttribute="bottom" constant="30" id="sv2-m6-SR2"/>
+                            <constraint firstAttribute="bottom" secondItem="f5B-C1-Z19" secondAttribute="bottom" constant="20" id="swt-TL-1ed"/>
+                            <constraint firstItem="rJy-PJ-PbS" firstAttribute="trailing" secondItem="fHJ-NQ-4UM" secondAttribute="trailing" id="tAD-4o-mYZ"/>
+                            <constraint firstItem="XWO-Ai-Wn2" firstAttribute="leading" secondItem="gl5-Gz-tmU" secondAttribute="leading" id="w7W-R3-Al4"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="XWO-Ai-Wn2" secondAttribute="trailing" constant="20" symbolic="YES" id="xNh-WJ-gOA"/>
+                            <constraint firstItem="SNu-yJ-U2P" firstAttribute="top" secondItem="XWO-Ai-Wn2" secondAttribute="bottom" constant="20" id="z9m-hc-Ivu"/>
+                            <constraint firstItem="gl5-Gz-tmU" firstAttribute="top" secondItem="Jjz-F1-GXg" secondAttribute="bottom" constant="8" id="zLC-O0-WmE"/>
+                            <constraint firstItem="rJy-PJ-PbS" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dI5-Py-1PT" secondAttribute="leading" constant="20" symbolic="YES" id="zhE-VL-cJE"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="criticalColorWell" destination="XWO-Ai-Wn2" id="3km-Nx-vlI"/>
+                        <outlet property="normalColorWell" destination="Jjz-F1-GXg" id="pyY-1w-Ibj"/>
+                        <outlet property="refreshRatePopupButton" destination="SNu-yJ-U2P" id="8ND-di-XlR"/>
+                        <outlet property="warningColorWell" destination="gl5-Gz-tmU" id="LVj-80-5uM"/>
+                    </connections>
                 </viewController>
                 <customObject id="YK3-Lr-FFV" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1230" y="712"/>
+            <point key="canvasLocation" x="1260" y="669"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">

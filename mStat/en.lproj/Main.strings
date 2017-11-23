@@ -2,6 +2,9 @@
 /* Class = "NSMenuItem"; title = "mStat"; ObjectID = "1Xt-HY-uBw"; */
 "1Xt-HY-uBw.title" = "mStat";
 
+/* Class = "NSMenuItem"; title = "Normal (1s)"; ObjectID = "2cv-SQ-IY5"; */
+"2cv-SQ-IY5.title" = "Normal (1s)";
+
 /* Class = "NSTextFieldCell"; title = "3. Click the green + button"; ObjectID = "3f5-Fd-HSd"; */
 "3f5-Fd-HSd.title" = "3. Click the green + button";
 
@@ -17,11 +20,20 @@
 /* Class = "NSTabViewItem"; label = "General"; ObjectID = "6QA-QU-4pj"; */
 "6QA-QU-4pj.label" = "General";
 
+/* Class = "NSTextFieldCell"; title = "All the settings will take effect during data update."; ObjectID = "78F-F0-gUc"; */
+"78F-F0-gUc.title" = "All the settings will take effect during data update.";
+
+/* Class = "NSMenuItem"; title = "Fast (0.5s)"; ObjectID = "7NL-ul-BGZ"; */
+"7NL-ul-BGZ.title" = "Fast (0.5s)";
+
 /* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
 "AYu-sK-qS6.title" = "Main Menu";
 
 /* Class = "NSMenuItem"; title = "Preferences…"; ObjectID = "BOF-NM-1cW"; */
 "BOF-NM-1cW.title" = "Preferences…";
+
+/* Class = "NSMenuItem"; title = "Very Slow (5s)"; ObjectID = "DxI-3w-OBb"; */
+"DxI-3w-OBb.title" = "Very Slow (5s)";
 
 /* Class = "NSMenu"; title = "Help"; ObjectID = "F2S-fz-NVQ"; */
 "F2S-fz-NVQ.title" = "Help";
@@ -47,6 +59,9 @@
 /* Class = "NSMenuItem"; title = "Services"; ObjectID = "NMo-om-nkz"; */
 "NMo-om-nkz.title" = "Services";
 
+/* Class = "NSTextFieldCell"; title = "Warning Color:"; ObjectID = "Nr0-SO-jYt"; */
+"Nr0-SO-jYt.title" = "Warning Color:";
+
 /* Class = "NSMenuItem"; title = "Minimize"; ObjectID = "OY7-WF-poV"; */
 "OY7-WF-poV.title" = "Minimize";
 
@@ -56,11 +71,20 @@
 /* Class = "NSMenuItem"; title = "Zoom"; ObjectID = "R4o-n2-Eq4"; */
 "R4o-n2-Eq4.title" = "Zoom";
 
+/* Class = "NSMenuItem"; title = "Slow (2s)"; ObjectID = "Soh-XZ-Zc7"; */
+"Soh-XZ-Zc7.title" = "Slow (2s)";
+
 /* Class = "NSMenu"; title = "Window"; ObjectID = "Td7-aD-5lo"; */
 "Td7-aD-5lo.title" = "Window";
 
 /* Class = "NSTextFieldCell"; title = "1 New"; ObjectID = "Ulp-5M-YyL"; */
 "Ulp-5M-YyL.title" = "1 New";
+
+/* Class = "NSButtonCell"; title = "Reset to Default"; ObjectID = "Uua-IX-7A3"; */
+"Uua-IX-7A3.title" = "Reset to Default";
+
+/* Class = "NSTextFieldCell"; title = "Critical Color:"; ObjectID = "VEl-He-hYD"; */
+"VEl-He-hYD.title" = "Critical Color:";
 
 /* Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "Vdr-fp-XzO"; */
 "Vdr-fp-XzO.title" = "Hide Others";
@@ -73,6 +97,9 @@
 
 /* Class = "NSButtonCell"; title = "Preferences"; ObjectID = "bpf-lW-wjE"; */
 "bpf-lW-wjE.title" = "Preferences";
+
+/* Class = "NSTextFieldCell"; title = "Normal Color:"; ObjectID = "de4-BY-iGD"; */
+"de4-BY-iGD.title" = "Normal Color:";
 
 /* Class = "NSMenu"; title = "Services"; ObjectID = "hz9-B4-Xy5"; */
 "hz9-B4-Xy5.title" = "Services";
@@ -91,6 +118,9 @@
 
 /* Class = "NSMenuItem"; title = "Help"; ObjectID = "wpr-3q-Mcd"; */
 "wpr-3q-Mcd.title" = "Help";
+
+/* Class = "NSTextFieldCell"; title = "Refresh Rate:"; ObjectID = "yDC-f6-z0J"; */
+"yDC-f6-z0J.title" = "Refresh Rate:";
 
 /* Class = "NSWindow"; title = "General"; ObjectID = "yXi-A5-ZZY"; */
 "yXi-A5-ZZY.title" = "General";

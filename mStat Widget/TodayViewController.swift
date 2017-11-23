@@ -32,6 +32,8 @@ class TodayViewController: NSViewController, NCWidgetProviding {
     var previousDataUsage: data_usage? = nil
     var currentInterface: String?
     
+    let config = Configuration.shared
+    
     let updateInterval: UInt = 1
     
     override var nibName: NSNib.Name? {
@@ -57,20 +59,26 @@ class TodayViewController: NSViewController, NCWidgetProviding {
         // Update your data and prepare for a snapshot. Call completion handler when you are done
         // with NoData if nothing has changed or NewData if there is new data since the last
         // time we called you
-        
         sys = System()
         let route = Device.current.defaultRoute()
         currentInterface = route.device6 != nil ? route.device6! : route.device
         if timer == nil {
-            timer = Timer.scheduledTimer(timeInterval: Double(updateInterval), target: self, selector: #selector(updateUI(_:)), userInfo: nil, repeats: true)
+            let timeInterval = config.refreshRate
+            timer = Timer.scheduledTimer(timeInterval: timeInterval, target: self, selector: #selector(updateUI(_:)), userInfo: nil, repeats: true)
         }
-        updateUI(nil)
-        updateDiskInfomation()
-        updateBatteryInformation()
         completionHandler(.newData)
     }
     
+    func resetTimer() {
+        let timeInterval = config.refreshRate
+        if timer?.timeInterval != timeInterval {
+            timer?.invalidate()
+            timer = Timer.scheduledTimer(timeInterval: timeInterval, target: self, selector: #selector(updateUI(_:)), userInfo: nil, repeats: true)
+        }
+    }
+    
     @objc func updateUI(_ aTimer: Timer?) {
+        resetTimer()
         DispatchQueue.main.async { [weak self] in
             guard let `self` = self else { return }
             
@@ -81,13 +89,13 @@ class TodayViewController: NSViewController, NCWidgetProviding {
             self.cpuPercentLabel.stringValue = String(format:"%.0f%%", cpuUsed)
             switch cpuUsed {
             case 0..<50:
-                self.cpuProgressBar.tintColor = Theme.normalColor
+                self.cpuProgressBar.tintColor = self.config.normalColor
             case 50..<80:
-                self.cpuProgressBar.tintColor = Theme.warningColor
+                self.cpuProgressBar.tintColor = self.config.warningColor
             case 80...:
-                self.cpuProgressBar.tintColor = Theme.criticalColor
+                self.cpuProgressBar.tintColor = self.config.criticalColor
             default:
-                self.cpuProgressBar.tintColor = Theme.normalColor
+                self.cpuProgressBar.tintColor = self.config.normalColor
             }
             
             // Memory
@@ -98,13 +106,13 @@ class TodayViewController: NSViewController, NCWidgetProviding {
             
             switch memUsed {
             case 0..<50:
-                self.memoryProgressBar.tintColor = Theme.normalColor
+                self.memoryProgressBar.tintColor = self.config.normalColor
             case 50..<80:
-                self.memoryProgressBar.tintColor = Theme.warningColor
+                self.memoryProgressBar.tintColor = self.config.warningColor
             case 80...:
-                self.memoryProgressBar.tintColor = Theme.criticalColor
+                self.memoryProgressBar.tintColor = self.config.criticalColor
             default:
-                self.memoryProgressBar.tintColor = Theme.normalColor
+                self.memoryProgressBar.tintColor = self.config.normalColor
             }
         }
         
@@ -155,6 +163,13 @@ class TodayViewController: NSViewController, NCWidgetProviding {
             self.loadLabel.stringValue = loadAverageString
             self.uptimeLabel.stringValue = uptimeString
         }
+        
+        // Disk and battery
+        DispatchQueue.main.async { [weak self] in
+            guard let `self` = self else { return }
+            self.updateDiskInfomation()
+            self.updateBatteryInformation()
+        }
     }
     
     func updateDiskInfomation() {
@@ -169,13 +184,13 @@ class TodayViewController: NSViewController, NCWidgetProviding {
             hddPercentLabel.stringValue = String(format:"%.0f%%", hddUsed)
             switch hddUsed {
             case 0..<50:
-                hddProgressBar.tintColor = Theme.normalColor
+                hddProgressBar.tintColor = config.normalColor
             case 50..<80:
-                hddProgressBar.tintColor = Theme.warningColor
+                hddProgressBar.tintColor = config.warningColor
             case 80...:
-                hddProgressBar.tintColor = Theme.criticalColor
+                hddProgressBar.tintColor = config.criticalColor
             default:
-                hddProgressBar.tintColor = Theme.normalColor
+                hddProgressBar.tintColor = config.normalColor
             }
         }
     }
@@ -203,11 +218,11 @@ class TodayViewController: NSViewController, NCWidgetProviding {
             batteryProgressBar.current = charge
             switch charge {
             case 20...:
-                self.batteryProgressBar.tintColor = Theme.normalColor
+                self.batteryProgressBar.tintColor = config.normalColor
             case 0..<20:
-                self.batteryProgressBar.tintColor = Theme.criticalColor
+                self.batteryProgressBar.tintColor = config.criticalColor
             default:
-                self.memoryProgressBar.tintColor = Theme.normalColor
+                self.memoryProgressBar.tintColor = config.normalColor
             }
             if battery.isCharging() {
                 batteryTimeLabel.stringValue = NSLocalizedString("Charging", comment: "Charging")

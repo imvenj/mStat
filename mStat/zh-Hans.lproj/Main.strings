@@ -2,6 +2,9 @@
 /* Class = "NSMenuItem"; title = "mStat"; ObjectID = "1Xt-HY-uBw"; */
 "1Xt-HY-uBw.title" = "mStat";
 
+/* Class = "NSMenuItem"; title = "Normal (1s)"; ObjectID = "2cv-SQ-IY5"; */
+"2cv-SQ-IY5.title" = "正常 (1秒)";
+
 /* Class = "NSTextFieldCell"; title = "3. Click the green + button"; ObjectID = "3f5-Fd-HSd"; */
 "3f5-Fd-HSd.title" = "3. 点击绿色的 + 按钮";
 
@@ -17,11 +20,20 @@
 /* Class = "NSTabViewItem"; label = "General"; ObjectID = "6QA-QU-4pj"; */
 "6QA-QU-4pj.label" = "通用";
 
+/* Class = "NSTextFieldCell"; title = "All the settings will take effect during data update."; ObjectID = "78F-F0-gUc"; */
+"78F-F0-gUc.title" = "所有设定值都将在小工具刷新数据时生效。";
+
+/* Class = "NSMenuItem"; title = "Fast (0.5s)"; ObjectID = "7NL-ul-BGZ"; */
+"7NL-ul-BGZ.title" = "快速 (0.5秒)";
+
 /* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
 "AYu-sK-qS6.title" = "Main Menu";
 
 /* Class = "NSMenuItem"; title = "Preferences…"; ObjectID = "BOF-NM-1cW"; */
 "BOF-NM-1cW.title" = "偏好设置…";
+
+/* Class = "NSMenuItem"; title = "Very Slow (5s)"; ObjectID = "DxI-3w-OBb"; */
+"DxI-3w-OBb.title" = "非常慢 (5秒)";
 
 /* Class = "NSMenu"; title = "Help"; ObjectID = "F2S-fz-NVQ"; */
 "F2S-fz-NVQ.title" = "帮助";
@@ -50,11 +62,17 @@
 /* Class = "NSMenuItem"; title = "Minimize"; ObjectID = "OY7-WF-poV"; */
 "OY7-WF-poV.title" = "最小化";
 
+/* Class = "NSTextFieldCell"; title = "Warning Color:"; ObjectID = "Nr0-SO-jYt"; */
+"Nr0-SO-jYt.title" = "提醒色:";
+
 /* Class = "NSMenuItem"; title = "Hide mStat"; ObjectID = "Olw-nP-bQN"; */
 "Olw-nP-bQN.title" = "隐藏 mStat";
 
 /* Class = "NSMenuItem"; title = "Zoom"; ObjectID = "R4o-n2-Eq4"; */
 "R4o-n2-Eq4.title" = "缩放";
+
+/* Class = "NSMenuItem"; title = "Slow (2s)"; ObjectID = "Soh-XZ-Zc7"; */
+"Soh-XZ-Zc7.title" = "较慢 (2秒)";
 
 /* Class = "NSMenu"; title = "Window"; ObjectID = "Td7-aD-5lo"; */
 "Td7-aD-5lo.title" = "窗口";
@@ -68,11 +86,20 @@
 /* Class = "NSTextFieldCell"; title = "Today"; ObjectID = "YgL-Ij-4Fd"; */
 "YgL-Ij-4Fd.title" = "今天";
 
+/* Class = "NSButtonCell"; title = "Reset to Default"; ObjectID = "Uua-IX-7A3"; */
+"Uua-IX-7A3.title" = "重置为默认值";
+
+/* Class = "NSTextFieldCell"; title = "Critical Color:"; ObjectID = "VEl-He-hYD"; */
+"VEl-He-hYD.title" = "警告色:";
+
 /* Class = "NSMenuItem"; title = "Window"; ObjectID = "aUF-d1-5bR"; */
 "aUF-d1-5bR.title" = "窗口";
 
 /* Class = "NSButtonCell"; title = "Preferences"; ObjectID = "bpf-lW-wjE"; */
 "bpf-lW-wjE.title" = "设置";
+
+/* Class = "NSTextFieldCell"; title = "Normal Color:"; ObjectID = "de4-BY-iGD"; */
+"de4-BY-iGD.title" = "正常色:";
 
 /* Class = "NSMenu"; title = "Services"; ObjectID = "hz9-B4-Xy5"; */
 "hz9-B4-Xy5.title" = "服务";
@@ -91,6 +118,9 @@
 
 /* Class = "NSMenuItem"; title = "Help"; ObjectID = "wpr-3q-Mcd"; */
 "wpr-3q-Mcd.title" = "帮助";
+
+/* Class = "NSTextFieldCell"; title = "Refresh Rate:"; ObjectID = "yDC-f6-z0J"; */
+"yDC-f6-z0J.title" = "刷新速度:";
 
 /* Class = "NSWindow"; title = "General"; ObjectID = "yXi-A5-ZZY"; */
 "yXi-A5-ZZY.title" = "通用";
