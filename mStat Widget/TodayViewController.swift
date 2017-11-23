@@ -69,6 +69,10 @@ class TodayViewController: NSViewController, NCWidgetProviding {
         completionHandler(.newData)
     }
     
+    func widgetMarginInsets(forProposedMarginInsets defaultMarginInset: NSEdgeInsets) -> NSEdgeInsets {
+        return NSEdgeInsets(top: 8.0, left: 8.0, bottom: 8.0, right: 8.0)
+    }
+    
     func resetTimer() {
         let timeInterval = config.refreshRate
         if timer?.timeInterval != timeInterval {
