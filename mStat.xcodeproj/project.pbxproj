@@ -28,6 +28,7 @@
 		2549EE991FBEB51100BBAA84 /* mStat Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2549EE881FBEB51100BBAA84 /* mStat Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		257C4C18201ECA8700E66951 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 257C4C17201ECA8700E66951 /* Sparkle.framework */; };
 		257C4C19201ECB0300E66951 /* Sparkle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 257C4C17201ECA8700E66951 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		257C4C1D201ED13900E66951 /* PFMoveApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 257C4C1C201ED13900E66951 /* PFMoveApplication.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		25842AD61FC2712800579713 /* Battery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25842AD21FC2712700579713 /* Battery.swift */; };
 		25842AD71FC2712800579713 /* IOReturn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25842AD31FC2712700579713 /* IOReturn.swift */; };
 		25842AD81FC2712800579713 /* Process.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25842AD41FC2712700579713 /* Process.swift */; };
@@ -107,6 +108,9 @@
 		2549EE941FBEB51100BBAA84 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2549EE961FBEB51100BBAA84 /* mStat Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "mStat Widget.entitlements"; sourceTree = "<group>"; };
 		257C4C17201ECA8700E66951 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		257C4C1A201ED13800E66951 /* mStat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mStat-Bridging-Header.h"; sourceTree = "<group>"; };
+		257C4C1B201ED13900E66951 /* PFMoveApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFMoveApplication.h; sourceTree = "<group>"; };
+		257C4C1C201ED13900E66951 /* PFMoveApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFMoveApplication.m; sourceTree = "<group>"; };
 		25842AD21FC2712700579713 /* Battery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Battery.swift; sourceTree = "<group>"; };
 		25842AD31FC2712700579713 /* IOReturn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IOReturn.swift; sourceTree = "<group>"; };
 		25842AD41FC2712700579713 /* Process.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Process.swift; sourceTree = "<group>"; };
@@ -180,11 +184,13 @@
 				25D3B6461FC6B9630035FD01 /* NSAlertExtension.swift */,
 				254964081FC69B3600D60053 /* Configuration.swift */,
 				2549640B1FC69FC700D60053 /* NSColor+Components.swift */,
+				257C4C1E201ED17900E66951 /* Lets Move */,
 				254964011FC682F300D60053 /* Localizable.strings */,
 				2549EE781FBEB48F00BBAA84 /* Assets.xcassets */,
 				2549EE7A1FBEB48F00BBAA84 /* Main.storyboard */,
 				2549EE7D1FBEB48F00BBAA84 /* Info.plist */,
 				2549EE7E1FBEB48F00BBAA84 /* mStat.entitlements */,
+				257C4C1A201ED13800E66951 /* mStat-Bridging-Header.h */,
 			);
 			path = mStat;
 			sourceTree = "<group>";
@@ -218,6 +224,15 @@
 				25842ADB1FC2719700579713 /* mStat-Widget-Bridging-Header.h */,
 			);
 			path = "mStat Widget";
+			sourceTree = "<group>";
+		};
+		257C4C1E201ED17900E66951 /* Lets Move */ = {
+			isa = PBXGroup;
+			children = (
+				257C4C1B201ED13900E66951 /* PFMoveApplication.h */,
+				257C4C1C201ED13900E66951 /* PFMoveApplication.m */,
+			);
+			path = "Lets Move";
 			sourceTree = "<group>";
 		};
 		25842ADA1FC2713900579713 /* SystemKit */ = {
@@ -283,6 +298,7 @@
 				TargetAttributes = {
 					2549EE701FBEB48F00BBAA84 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.Mac = {
@@ -358,6 +374,7 @@
 				254963F81FC67A2A00D60053 /* GeneralPreferenceViewController.swift in Sources */,
 				254963F61FC67A1200D60053 /* PreferenceWindowController.swift in Sources */,
 				2549EE771FBEB48F00BBAA84 /* ViewController.swift in Sources */,
+				257C4C1D201ED13900E66951 /* PFMoveApplication.m in Sources */,
 				254963FA1FC67A5600D60053 /* PreferenceTabViewController.swift in Sources */,
 				2549EE751FBEB48F00BBAA84 /* AppDelegate.swift in Sources */,
 				2549640C1FC69FC700D60053 /* NSColor+Components.swift in Sources */,
@@ -562,6 +579,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = mStat/mStat.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Manual;
@@ -577,6 +595,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "3195fcd9-4e65-490d-b31c-502371eaab24";
 				PROVISIONING_PROFILE_SPECIFIER = "mStat Dev Profile";
+				SWIFT_OBJC_BRIDGING_HEADER = "mStat/mStat-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -586,6 +606,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = mStat/mStat.entitlements;
 				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				CODE_SIGN_STYLE = Manual;
@@ -601,6 +622,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "ecfc44cf-7029-4621-b626-6378241e54d7";
 				PROVISIONING_PROFILE_SPECIFIER = "mStat MAS Deploy Profile";
+				SWIFT_OBJC_BRIDGING_HEADER = "mStat/mStat-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
