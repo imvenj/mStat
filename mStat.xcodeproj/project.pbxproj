@@ -26,6 +26,8 @@
 		2549EE911FBEB51100BBAA84 /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2549EE8F1FBEB51100BBAA84 /* TodayViewController.xib */; };
 		2549EE951FBEB51100BBAA84 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2549EE931FBEB51100BBAA84 /* InfoPlist.strings */; };
 		2549EE991FBEB51100BBAA84 /* mStat Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2549EE881FBEB51100BBAA84 /* mStat Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		257C4C18201ECA8700E66951 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 257C4C17201ECA8700E66951 /* Sparkle.framework */; };
+		257C4C19201ECB0300E66951 /* Sparkle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 257C4C17201ECA8700E66951 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		25842AD61FC2712800579713 /* Battery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25842AD21FC2712700579713 /* Battery.swift */; };
 		25842AD71FC2712800579713 /* IOReturn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25842AD31FC2712700579713 /* IOReturn.swift */; };
 		25842AD81FC2712800579713 /* Process.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25842AD41FC2712700579713 /* Process.swift */; };
@@ -70,6 +72,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				257C4C19201ECB0300E66951 /* Sparkle.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,6 +106,7 @@
 		2549EE921FBEB51100BBAA84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2549EE941FBEB51100BBAA84 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2549EE961FBEB51100BBAA84 /* mStat Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "mStat Widget.entitlements"; sourceTree = "<group>"; };
+		257C4C17201ECA8700E66951 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		25842AD21FC2712700579713 /* Battery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Battery.swift; sourceTree = "<group>"; };
 		25842AD31FC2712700579713 /* IOReturn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IOReturn.swift; sourceTree = "<group>"; };
 		25842AD41FC2712700579713 /* Process.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Process.swift; sourceTree = "<group>"; };
@@ -129,6 +133,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2592022B1FC2D57C00F93FD5 /* Cocoa.framework in Frameworks */,
+				257C4C18201ECA8700E66951 /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +192,7 @@
 		2549EE891FBEB51100BBAA84 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				257C4C17201ECA8700E66951 /* Sparkle.framework */,
 				2592022A1FC2D57300F93FD5 /* Cocoa.framework */,
 				2549EE8A1FBEB51100BBAA84 /* NotificationCenter.framework */,
 			);
@@ -281,6 +287,9 @@
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.Mac = {
 								enabled = 1;
+							};
+							com.apple.Sandbox = {
+								enabled = 0;
 							};
 						};
 					};
@@ -558,6 +567,10 @@
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 32Y52676KN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = mStat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.venj.mStat-Mac";
@@ -578,6 +591,10 @@
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 32Y52676KN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = mStat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.venj.mStat-Mac";
