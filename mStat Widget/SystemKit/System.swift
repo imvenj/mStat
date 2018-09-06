@@ -195,7 +195,7 @@ public struct System {
         else           { name = String() }
 
 
-        ptr.deallocate(capacity: 1)
+        ptr.deallocate()
 
         #if DEBUG
             if result != 0 {
@@ -468,7 +468,7 @@ public struct System {
                                                                       as! Double
         }
 
-        status.deallocate(capacity: 1)
+        status.deallocate()
 
         return (processorSpeed, processorCount, schedulerTime)
     }
@@ -530,7 +530,7 @@ public struct System {
         }
   
         let data = hostInfo.move()
-        hostInfo.deallocate(capacity: 1)
+        hostInfo.deallocate()
         
         #if DEBUG
             if result != KERN_SUCCESS {
@@ -554,7 +554,7 @@ public struct System {
         }
         
         let data = hostInfo.move()
-        hostInfo.deallocate(capacity: 1)
+        hostInfo.deallocate()
         
         #if DEBUG
             if result != KERN_SUCCESS {
@@ -578,7 +578,7 @@ public struct System {
         }
         
         let data = hostInfo.move()
-        hostInfo.deallocate(capacity: 1)
+        hostInfo.deallocate()
         
         #if DEBUG
             if result != KERN_SUCCESS {
@@ -631,7 +631,7 @@ public struct System {
         mach_port_deallocate(mach_task_self_, pset)
 
         let data = info_out.move()
-        info_out.deallocate(capacity: 1)
+        info_out.deallocate()
         
         return data
     }
@@ -656,7 +656,7 @@ public struct System {
         }
 
         let data = hostInfo.move()
-        hostInfo.deallocate(capacity: 1)
+        hostInfo.deallocate()
         
         #if DEBUG
             if result != KERN_SUCCESS {

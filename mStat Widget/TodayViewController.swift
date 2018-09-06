@@ -211,7 +211,8 @@ class TodayViewController: NSViewController, NCWidgetProviding {
             batteryTimeLabel.stringValue = NSLocalizedString("AC Power", comment: "AC Power")
         }
         else {
-            let healthy = battery.maxCapactiy() * 100 / battery.designCapacity()
+            let calculatedHealthy = battery.maxCapactiy() * 100 / battery.designCapacity()
+            let healthy = calculatedHealthy > 100 ? 100 : calculatedHealthy
             let cycles = battery.cycleCount()
             let temperature = battery.temperature()
             let infoString = String(format: NSLocalizedString("%d cycles, %d%% healthy, %.0f℃", comment: "%d cycles, %d%% healthy, %.0f℃"), cycles, healthy, temperature)
