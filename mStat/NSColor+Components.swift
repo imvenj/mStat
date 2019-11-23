@@ -9,13 +9,13 @@
 import Cocoa
 
 public extension NSColor {
-    public var components: [Double] {
+    var components: [Double] {
         get {
             return [Double(redComponent), Double(greenComponent), Double(blueComponent), Double(alphaComponent)]
         }
     }
     
-    public convenience init(components: [Double]) {
+    convenience init(components: [Double]) {
         var comp = components
         if components.count < 4 {
             for _ in components.count..<4 {

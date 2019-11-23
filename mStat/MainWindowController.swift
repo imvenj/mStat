@@ -23,7 +23,7 @@ class MainWindowController: NSWindowController {
 
     @IBAction func showAppPreferences(_ sender: Any?) {
         let storyboardID = "PreferenceWindowController"
-        if preferenceWindowController == nil { preferenceWindowController = storyboard?.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier(rawValue: storyboardID)) as? PreferenceWindowController }
+        if preferenceWindowController == nil { preferenceWindowController = storyboard?.instantiateController(withIdentifier: storyboardID) as? PreferenceWindowController }
         preferenceWindowController?.showWindow(nil)
     }
 }

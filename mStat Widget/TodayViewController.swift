@@ -37,7 +37,7 @@ class TodayViewController: NSViewController, NCWidgetProviding {
     let updateInterval: UInt = 1
     
     override var nibName: NSNib.Name? {
-        return NSNib.Name("TodayViewController")
+        return "TodayViewController"
     }
     
     deinit {

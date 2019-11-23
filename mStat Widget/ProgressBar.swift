@@ -95,7 +95,7 @@ class ProgressBar: NSView {
             let totalLineWidth = bounds.size.width - (borderWidth * 2 + thickness)
             progressPath.line(to: NSPoint(x: startX + totalLineWidth * CGFloat(percentage), y: startY))
             progressPath.lineWidth = thickness
-            progressPath.lineCapStyle = .roundLineCapStyle
+            progressPath.lineCapStyle = .round
             tintColor.setStroke()
             progressPath.stroke()
         }
