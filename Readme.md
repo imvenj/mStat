@@ -4,6 +4,12 @@ A mini system status widget for macOS.
 
 ![Screenshot](screenshot.png)
 
+## Download
+
+You can download mStat app from [release page](https://github.com/imvenj/mStat/releases). 
+
+App is code signed and notarized. :)
+
 ## Why open source?
 
 Because this app is rejected multiple times because it is TOO simple.
