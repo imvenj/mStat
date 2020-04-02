@@ -12,7 +12,7 @@ App is code signed and notarized. :)
 
 ## Why open source?
 
-Because this app is rejected multiple times because it is TOO simple.
+Because this app is rejected multiple times because it is TOO simple. But I still found it is useful to make it open source and share the [ready-to-use Mac App](https://github.com/imvenj/mStat/releases) with you guys who likes the simpleness of this app, instead of using the full-blown commercial system monitor apps.
 
 ## License
 
